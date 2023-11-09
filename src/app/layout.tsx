@@ -6,6 +6,9 @@ import { TRPCReactProvider } from "~/trpc/react";
 import Navbar from "~/app/components/navbar";
 import Footer from "~/app/components/footer";
 import React from "react";
+import Header from './components/header';
+import logo2 from "./assets/IEEE-logo-about.svg";
+import Image from "next/image";
 
 
 const poppins = Poppins({
@@ -26,11 +29,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
+
+    return (
     <html lang="en">
       <body  className={`font-sans ${poppins.variable}`}>
-      <Navbar/>
+
       <div className=' bg-black text-white'>
+          <Navbar />
           <div className="">
               <TRPCReactProvider headers={headers()}>{children}</TRPCReactProvider>
           </div>
