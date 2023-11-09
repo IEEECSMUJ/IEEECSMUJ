@@ -7,7 +7,7 @@ export default function Home() {
             <div>
                 <Hero />
                 <div className="max-w-7xl mx-auto px-4 lg:px-8">
-                    <Faq />
+
                 </div>
             </div>
         </>
