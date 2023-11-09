@@ -3,7 +3,7 @@
 import {Montserrat} from "next/font/google";
 import { JetBrains_Mono } from "next/font/google";
 import Image from "next/image";
-import logo from "../assets/IEEE-logo-white.svg";
+import logo from "../assets/ieee-logo-white.svg";
 import React from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLinkedin, faSquareInstagram, faSquareWhatsapp, faMedium,faSquareGithub} from "@fortawesome/free-brands-svg-icons";
