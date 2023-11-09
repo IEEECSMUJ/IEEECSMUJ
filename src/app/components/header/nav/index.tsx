@@ -28,7 +28,9 @@ const navItems = [
 
 export default function index() {
 
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const pathname = usePathname();
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const [selectedIndicator, setSelectedIndicator] = useState(pathname);
 
     return (

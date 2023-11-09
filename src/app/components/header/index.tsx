@@ -12,7 +12,7 @@ export default function Home() {
 
     useEffect( () => {
         if(isActive) setIsActive(false)
-    }, [isActive, pathname])
+    }, [pathname])
 
     return (
         <>
