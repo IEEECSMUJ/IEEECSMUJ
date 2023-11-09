@@ -6,18 +6,10 @@ import Image from "next/image";
 import logo from "../assets/ieee-logo-white.svg";
 import React from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faLinkedin, faSquareInstagram, faSquareWhatsapp, faMedium,faSquareGithub} from "@fortawesome/free-brands-svg-icons";
+import {faLinkedin, faSquareInstagram, faSquareWhatsapp, faSquareGithub} from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 
-const montserrat = Montserrat({
-    subsets: ["latin"],
-    variable: "--font-sans",
-});
 
-const jetbrains_mono = JetBrains_Mono({
-    subsets: ["latin"],
-    variable: "--font-mono",
-});
 export default function Footer() {
     return(
         <>

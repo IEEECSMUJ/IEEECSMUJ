@@ -12,12 +12,11 @@ export default function Home() {
 
     useEffect( () => {
         if(isActive) setIsActive(false)
-    }, [pathname])
+    }, [isActive, pathname])
 
     return (
         <>
             <div className={styles.main}>
-
                 <div className={styles.header}>
                     <div onClick={() => {setIsActive(!isActive)}} className={styles.button}>
                         <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}></div>
