@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { slide, scale } from '../../anim';
 
+// @ts-ignore
 export default function Index({data, isActive, setSelectedIndicator}) {
 
     const { title, href, index} = data;
