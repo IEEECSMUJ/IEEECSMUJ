@@ -6,9 +6,9 @@ export default function Page() {
     return(
         <>
             <div className="bg-[#000000]">
-                <div id="parallax" className="w-full py-12 bg-fixed">
-                    <div className="max-w-7xl mx-auto px-4 lg:px-8">
-                        <p className="text-5xl text-center font-bold text-white">TEAM</p>
+                <div  className="w-full py-12 bg-fixed">
+                    <div className=" mx-auto px-4 lg:px-8">
+                        <p className="text-5xl text-center font-bold text-ieeeyellow">TEAM</p>
                     </div>
                 </div>
                 <div className="max-w-7xl mx-auto px-4 lg:px-8 py-8">

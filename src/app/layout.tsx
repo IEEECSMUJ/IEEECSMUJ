@@ -28,12 +28,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`font-sans ${poppins.variable} bg-black text-white`}>
+      <body  className={`font-sans ${poppins.variable}`}>
       <Navbar/>
-      <div className="">
-          <TRPCReactProvider headers={headers()}>{children}</TRPCReactProvider>
+      <div className=' bg-black text-white'>
+          <div className="">
+              <TRPCReactProvider headers={headers()}>{children}</TRPCReactProvider>
+          </div>
+          <Footer/>
       </div>
-      <Footer/>
       </body>
     </html>
   );

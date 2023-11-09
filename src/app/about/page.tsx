@@ -7,12 +7,12 @@ export default function Page() {
     return(
         <>
             <div className='bg-[#000000]'>
-                <div id="parallax" className="w-full py-12 bg-fixed">
-                    <div className="max-w-7xl mx-auto px-4 lg:px-8">
-                        <p className="text-5xl text-center font-bold text-white">ABOUT</p>
+                <div className="w-full py-12 bg-fixed">
+                    <div className=" mx-auto px-4 lg:px-8">
+                        <p className="text-5xl text-center font-bold text-ieeeyellow">ABOUT US</p>
                     </div>
                 </div>
-                <div className="max-w-7xl mx-auto px-4 lg:px-8 py-8">
+                <div className=" mx-auto px-4 lg:px-8 py-8">
                     <div className='flex flex-col md:flex-row'>
                         <div className='my-auto mx-auto'>
                             <div className="md:py-8 md:px-3">
