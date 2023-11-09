@@ -10,6 +10,7 @@ export default function Page() {
                 <div className="w-full py-12 bg-fixed">
                     <div className=" mx-auto px-4 lg:px-8">
                         <p className="text-5xl text-center font-bold text-ieeeyellow">ABOUT US</p>
+                        <hr className="mt-1 border-ieeegray opacity-20"/>
                     </div>
                 </div>
                 <div className=" mx-auto px-4 lg:px-8 py-8">
@@ -30,6 +31,7 @@ export default function Page() {
                             </div>
                         </div>
                     </div>
+                    <hr className="mt-1 border-ieeegray opacity-20"/>
                 </div>
             </div>
         </>
