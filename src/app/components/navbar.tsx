@@ -1,11 +1,10 @@
 "use client"
 
-import { useState } from "react";
-import logo from "../assets/ieee-logo-about.svg";
+
+import logo from "../assets/IEEE-logo-about.svg";
 import Image from "next/image";
 import Link from "next/link";
-import {usePathname} from "next/navigation";
-import {Montserrat} from "next/font/google";
+
 import Header from "./header"
 
 export default function Navbar() {
