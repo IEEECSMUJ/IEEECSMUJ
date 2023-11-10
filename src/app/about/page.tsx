@@ -1,9 +1,13 @@
+'use client'
+
 import Image from "next/image";
 import logo1 from "~/app/assets/IEEE-logo-about.svg";
 import React from "react";
+import useLenis from "~/app/hooks/useLenis";
 
 
 export default function Page() {
+    useLenis();
     return(
         <>
             <div className='bg-[#000000]'>

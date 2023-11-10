@@ -1,8 +1,11 @@
+'use client'
+
 import {ECTeamCard} from "~/app/components/team_card";
 import {CCTeamCard} from "~/app/components/team_card";
-
+import useLenis from "~/app/hooks/useLenis";
 
 export default function Page() {
+    useLenis();
     return(
         <>
             <div className="bg-[#000000]">
