@@ -8,7 +8,7 @@ export default function Page() {
             <div className="bg-[#000000]">
                 <div  className="w-full py-12 bg-fixed">
                     <div className=" mx-auto px-4 lg:px-8">
-                        <p className="text-5xl text-center font-bold text-ieeeyellow">TEAM</p>
+                        <p className="text-5xl text-center font-bold text-ieeeyellow">Team</p>
                     </div>
                 </div>
                 <div className="max-w-7xl mx-auto px-4 lg:px-8 py-8">

@@ -1,35 +1,20 @@
 import React from 'react';
 
 const Faq = () => {
-    const faq = [
-        {
-            question: 'Google',
-            answer: 'https://www.google.com'
-        },
-        {
-            question: 'Facebook',
-            answer: 'https://www.facebook.com'
-        },
-        {
-            question: 'Twitter',
-            answer: 'https://www.twitter.com'
-        }
-    ]
-
     return (
         <div>
-            {faq.map((faq, index) => (
-                <div key={index}>
-                    <div className='font-mono'>
-                        <div className=" items-center justify-around bg-ieeeorange bg-opacity-10 backdrop-blur-0 border border-ieeeorange rounded-lg shadow mb-4 md:p-3">
-                            <div className="">
-                                <h1 className="text-2xl lg:text-4xl font-bold tracking-tight text-ieeeorange mb-[2vh]">{faq.question}</h1>
-                                <p className=" font-normal text-ieeegray lg:text-2xl text-justify">{faq.answer}</p>
-                            </div>
-                        </div>
-                    </div>
+            <div className='bg-[#000000]'>
+                <div className=" mx-auto px-4 py-8 lg:px-8">
+                    <p className="text-5xl text-center font-bold text-ieeeyellow">Who are we?</p>
+                    <hr className="mt-1 border-ieeegray opacity-20"/>
                 </div>
-            ))}
+            </div>
+            <div className="max-w-7xl mx-auto px-4 lg:px-8 py-8">
+                <div className='md:mx-16 mx-8 text-center '>
+                    <p className='my-4'>We are a vibrant community of tech enthusiasts united by a common goal – to foster a dynamic coding environment through an exciting array of tech and semi-tech events.</p>
+                    <p className='my-4'>Our mission is to inspire innovation, collaboration, and continuous learning!</p>
+                </div>
+            </div>
         </div>
     );
 };

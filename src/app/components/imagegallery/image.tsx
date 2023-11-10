@@ -47,7 +47,7 @@ function Slider() {
     // @ts-ignore
     const {url} = slides[currentIndex];
     return (
-        <div className='max-w-7xl h-[720px] w-full m-auto py-8 px-4 relative group'>
+        <div className='max-w-7xl aspect-square h-[720px] w-full m-auto py-8 px-4 relative group'>
             <div
                 style={{ backgroundImage: `url(${url})` }}
                 className='w-full h-full rounded-2xl bg-center bg-cover duration-500'

@@ -1,6 +1,5 @@
 "use client"
 
-
 import logo from "../assets/IEEE-logo-about.svg";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,9 +10,9 @@ export default function Navbar() {
 
     return(
         <>
-            <div className="w-full bg-[#292929] max-h-20  z-20 sticky top-0">
+            <div className="w-full bg-[#292929] bg-opacity-70 max-h-20  z-20 sticky top-0">
                 <Header />
-                <div className=" flex flex-row items-center justify-between mx-auto px-4 lg:px-8">
+                <div className=" flex flex-row  items-center justify-between mx-auto px-4 lg:px-8">
                     <Link href="/" className="flex items-center ml-0 pt-2 my-2">
                         <div className="">
                             <div className="">
