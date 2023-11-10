@@ -13,7 +13,7 @@ const navItems = [
         href: "/",
     },
     {
-        title: "blog",
+        title: "Blog",
         href: "https://medium.com/@ieeecs",
     },
     {
