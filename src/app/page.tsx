@@ -1,22 +1,19 @@
 'use client'
 
-import Hero from "~/app/components/hero";
 import Slider from "~/app/components/imagegallery/image";
 import React from "react";
 import Mission from "~/app/components/mission";
 import Faq from "./components/faq"
 import useLenis from "~/app/hooks/useLenis";
 import ParticlesContainer from "~/app/components/ParticlesContainer";
-import Image from "next/image";
-import logo from "./assets/favicon.svg";
+
 
 export default function Home() {
     useLenis();
     return (
         <>
-            <ParticlesContainer />
+            <div className=''><ParticlesContainer /></div>
             <div className="">
-                <Hero />
                 <div className="bg-black">
                     <Mission />
                     <div className="w-full py-12 bg-fixed">

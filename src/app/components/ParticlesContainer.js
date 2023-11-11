@@ -18,7 +18,7 @@ const ParticlesContainer = () => {
 
     return (
         <Particles
-            className='h-screen -mt-16'
+            className='h-screen'
             id='tsparticles' init={ParticlesInit} loaded={ParticlesLoaded} options={
         {
             "autoPlay": true,
@@ -45,7 +45,7 @@ const ParticlesContainer = () => {
             "defaultThemes": {},
             "delay": 0,
             "fullScreen": {
-            "enable": true,
+            "enable": false,
             "zIndex": 0
         },
             "detectRetina": true,
