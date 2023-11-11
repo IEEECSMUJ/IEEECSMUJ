@@ -35,7 +35,6 @@ export default function RootLayout({
       <body  className={`font-sans bg-black ${poppins.variable}`}>
       <Navbar />
       <div className='bg-black overflow-hidden text-white'>
-
               <TRPCReactProvider headers={headers()}>{children}</TRPCReactProvider>
           <Footer/>
       </div>
