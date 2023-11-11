@@ -5,6 +5,8 @@ import Image from "next/image";
 import logo from "../assets/favicon.svg";
 
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+//@ts-ignore
 const ParticlesContainer = () => {
     // init
     const ParticlesInit = useCallback(async (engine) => {
@@ -25,7 +27,7 @@ const ParticlesContainer = () => {
             "color": {
             "value": "#000000"
         },
-            "image": "url('https://ieeecsmuj.vercel.app/favicon.svg')",
+            "image": "url('http://localhost:3000/favicon.svg')",
             "position": "50% 50%",
             "repeat": "no-repeat",
             "size": "15%",
