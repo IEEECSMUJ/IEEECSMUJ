@@ -26,7 +26,7 @@ const ParticlesContainer = () => {
             "color": {
             "value": "#000000"
         },
-            "image": "url('http://localhost:3000/favicon.svg')",
+            "image": "url('http://ieeecsmuj.vercel.app/favicon.svg')",
             "position": "50% 50%",
             "repeat": "no-repeat",
             "size": "15%",
