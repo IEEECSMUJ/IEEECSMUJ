@@ -8,9 +8,11 @@ import logo from "../assets/favicon.svg";
 const ParticlesContainer = () => {
     // init
     const ParticlesInit = useCallback(async (engine) => {
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
         await loadFull(engine);
     }, []);
 
+    // eslint-disable-next-line @typescript-eslint/no-empty-function
     const ParticlesLoaded = useCallback(async ()=> {}, [])
 
     return (
@@ -47,7 +49,7 @@ const ParticlesContainer = () => {
         },
             "detectRetina": true,
             "duration": 0,
-            "fpsLimit": 120,
+            "fpsLimit": 60,
             "interactivity": {
             "detectsOn": "window",
             "events": {
@@ -82,7 +84,7 @@ const ParticlesContainer = () => {
             "quantity": 1
         },
             "attract": {
-            "distance": 200,
+            "distance": 100,
             "duration": 0.4,
             "easing": "ease-out-quad",
             "factor": 1,
@@ -93,7 +95,7 @@ const ParticlesContainer = () => {
             "distance": 200
         },
             "bubble": {
-            "distance": 250,
+            "distance": 150,
             "duration": 2,
             "mix": false,
             "opacity": 0,
@@ -129,7 +131,7 @@ const ParticlesContainer = () => {
             "quantity": 2
         },
             "repulse": {
-            "distance": 400,
+            "distance": 200,
             "duration": 0.4,
             "factor": 100,
             "speed": 1,
@@ -321,7 +323,7 @@ const ParticlesContainer = () => {
             "height": 1080
         },
             "limit": 0,
-            "value": 160
+            "value": 600
         },
             "opacity": {
             "random": {
