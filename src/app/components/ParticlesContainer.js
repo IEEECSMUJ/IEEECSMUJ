@@ -1,15 +1,13 @@
 import {Particles} from'react-tsparticles';
 import {loadFull} from 'tsparticles';
 import React, {useCallback} from 'react';
-import Image from "next/image";
-import logo from "../assets/favicon.svg";
 
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-nocheck
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-//@ts-ignore
+
+
 const ParticlesContainer = () => {
     // init
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    //@ts-ignore
     const ParticlesInit = useCallback(async (engine) => {
         // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
         await loadFull(engine);
