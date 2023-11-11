@@ -30,7 +30,7 @@ const ParticlesContainer = () => {
                         "image": "url('https://ieeecsmuj.vercel.app/favicon.svg')",
                         "position": "50% 50%",
                         "repeat": "no-repeat",
-                        "size": "15%",
+                        "size": "25%",
                         "opacity": 1
                     },
                     "backgroundMask": {
