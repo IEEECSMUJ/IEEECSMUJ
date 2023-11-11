@@ -32,7 +32,7 @@ export default function RootLayout({
 
     return (
     <html lang="en">
-      <body  className={`font-sans ${poppins.variable}`}>
+      <body  className={`font-sans bg-black ${poppins.variable}`}>
       <Navbar />
       <div className='bg-black overflow-hidden text-white'>
 
