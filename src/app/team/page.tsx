@@ -14,13 +14,13 @@ export default function Page() {
                         <p className="text-5xl text-center font-bold text-ieeeyellow">Team</p>
                     </div>
                 </div>
-                <div className="max-w-7xl mx-auto px-4 lg:px-8 py-8">
+                <div className="max-w-7xl mx-auto px-4 lg:px-8">
                     <div>
                         <div className="mt-8 mb-16">
                             <p className="text-3xl text-center font-semibold text-ieeeyellow">Executive Committee</p>
                             <hr className="mt-1 border-ieeegray opacity-20"/>
                         </div>
-                        <div className="flex flex-wrap gap-24 mx-auto justify-center">
+                        <div className="flex  flex-wrap gap-24 mx-auto justify-center">
                             <ECTeamCard/>
                             <ECTeamCard/>
                             <ECTeamCard/>
