@@ -4,7 +4,8 @@ import React, {useCallback} from 'react';
 import Image from "next/image";
 import logo from "../assets/favicon.svg";
 
-
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 //@ts-ignore
 const ParticlesContainer = () => {
