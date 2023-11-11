@@ -14,9 +14,8 @@ export default function Home() {
     useLenis();
     return (
         <>
-
+            <ParticlesContainer />
             <div className="">
-                    <ParticlesContainer />
                 <Hero />
                 <div className="bg-black">
                     <Mission />

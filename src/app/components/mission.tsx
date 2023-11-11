@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from "next/link";
-import {handleSmoothScroll} from "next/dist/shared/lib/router/utils/handle-smooth-scroll";
+
 
 const Mission = () => {
     return (

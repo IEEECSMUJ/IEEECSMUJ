@@ -26,7 +26,7 @@ const ParticlesContainer = () => {
             "color": {
             "value": "#000000"
         },
-            "image": "url('http://ieeecsmuj.vercel.app/favicon.svg')",
+            "image": "url('https://ieeecsmuj.vercel.app/favicon.svg')",
             "position": "50% 50%",
             "repeat": "no-repeat",
             "size": "15%",
@@ -45,7 +45,7 @@ const ParticlesContainer = () => {
             "defaultThemes": {},
             "delay": 0,
             "fullScreen": {
-            "enable": false,
+            "enable": true,
             "zIndex": 0
         },
             "detectRetina": true,
