@@ -17,7 +17,7 @@ const navItems = [
         href: "https://medium.com/@ieeecs",
     },
     {
-        title: "About Us",
+        title: "About",
         href: "/about",
     },
     {

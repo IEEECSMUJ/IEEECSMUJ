@@ -14,7 +14,7 @@ export default function Footer() {
     return(
         <>
             <div id="parallax" className="bottom-0 mb-0 w-full z-20 min-h-96 text-white bg-fixed">
-               <div className=" mx-auto lg:px-8 lg:py-16 flex justify-around gap-8 flex-wrap px-4 md:flex-row flex-col mt-8 md:gap-0 md:py-8">
+               <div className=" mx-auto lg:px-8 lg:py-16 flex justify-around gap-8 flex-wrap px-4 md:flex-row flex-col mt-8 pt-4 md:gap-0 md:py-8">
                    <div className='flex justify-between md:flex-row flex-col'>
                        <div className="md:py-8">
                            {/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}

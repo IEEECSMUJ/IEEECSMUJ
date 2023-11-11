@@ -1,18 +1,28 @@
+'use client'
+
 import React from 'react';
 import Link from "next/link";
+import {handleSmoothScroll} from "next/dist/shared/lib/router/utils/handle-smooth-scroll";
 
 const Mission = () => {
     return (
         <>
-            <div className='bg-[#000000]'>
-                <div className=" mx-auto px-4 py-4 lg:px-8">
-                    <p className="text-5xl text-center font-bold text-ieeeyellow">IEEE Computer Society</p>
-                </div>
+            <div className='flex absolute right-0 -mt-36 mr-6 bg-ieeeyellow rounded-full p-2'>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+                </svg>
             </div>
-            <div className="max-w-7xl mx-auto px-4 lg:px-8">
-                <div className='md:mx-16 mx-8 text-center '>
-                    <p className='my-4'>The IEEE Computer Society (IEEE CS) is the premier source for information, inspiration, and collaboration in computer science and engineering!</p>
-                    <p className='text-center my-4 text-ieeeorange hover:underline'><Link target = "no_ref" href="https://computer.org">Learn more at computer.org</Link></p>
+            <div id="scrollto" className='mt-16 m-auto'>
+                <div className=''>
+                    <div className=" mx-auto px-4 py-4 lg:px-8">
+                        <p className="text-5xl text-center font-bold text-ieeeyellow">IEEE Computer Society</p>
+                    </div>
+                    <div className="max-w-7xl mx-auto px-4 lg:px-8">
+                        <div className='md:mx-16 mx-8 text-center '>
+                            <p className='my-4'>The IEEE Computer Society (IEEE CS) is the premier source for information, inspiration, and collaboration in computer science and engineering!</p>
+                            <p className='text-center my-4 text-ieeeorange hover:underline'><Link target = "no_ref" href="https://computer.org">Learn more at computer.org</Link></p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className='bg-[#000000]'>
