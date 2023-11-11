@@ -17,9 +17,9 @@ const ParticlesContainer = () => {
     const ParticlesLoaded = useCallback(async ()=> {}, [])
 
     return (
-        <div className='h-[100vh]'>
+        <div className='h-screen w-screen overflow-hidden'>
             <Particles
-                className='h-[100vh] absolute'
+                className='h-screen w-screen overflow-hidden absolute left-0 right-0 m-0 p-0 z-0'
                 id='tsparticles' init={ParticlesInit} loaded={ParticlesLoaded} options={
                 {
                     "autoPlay": true,
@@ -30,7 +30,7 @@ const ParticlesContainer = () => {
                         "image": "url('https://ieeecsmuj.vercel.app/favicon.svg')",
                         "position": "50% 50%",
                         "repeat": "no-repeat",
-                        "size": "5%",
+                        "size": "15%",
                         "opacity": 1
                     },
                     "backgroundMask": {

@@ -12,7 +12,7 @@ export default function Home() {
     useLenis();
     return (
         <>
-            <div className='h-[100vh]'><ParticlesContainer /></div>
+            <div className='h-screen w-screen -mt-16 overflow-hidden'><ParticlesContainer /></div>
             <div className="">
                 <div className="bg-black">
                     <Mission />
