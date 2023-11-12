@@ -86,12 +86,13 @@ export default function Footer() {
                                <li className="leading-6 hover:underline hover:underline-offset-2 pl-1"><Link href="https://www.ieee.org/membership_services/membership/join/index.html">IEEE Global Membership</Link></li>
                            </ul>
                        </div>
-                       <div className="md:w-[20%]">
+                       <div className="md:w-[20%] mb-4">
                            <p className="text-xl font-semibold pb-2">Address</p>
                            <p className="text-base leading-6">Manipal University Jaipur, Dehmi Kalan, Near GVK Toll Plaza, Jaipur-Ajmer Expressway, Jaipur, Rajasthan 303007</p>
                        </div>
                    </div>
                </div>
+                <div className={`pb-2`}><p className="text-center text-sm">Designed & Developed With <span className="animate-pulse">❤️</span>️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️ By Arunabha Mukhopadhyay</p></div>
             </div>
         </>
     )
