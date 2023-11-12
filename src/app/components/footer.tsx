@@ -92,7 +92,6 @@ export default function Footer() {
                        </div>
                    </div>
                </div>
-                <div className={`pb-2`}><p className="text-center text-sm">Designed & Developed With <span className="animate-pulse">❤️</span>️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️ By Arunabha Mukhopadhyay</p></div>
             </div>
         </>
     )
