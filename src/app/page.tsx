@@ -6,7 +6,6 @@ import Mission from "~/app/components/mission";
 import Faq from "./components/faq"
 import useLenis from "~/app/hooks/useLenis";
 import ParticlesContainer from "~/app/components/ParticlesContainer";
-import CountUp from "react-countup";
 import { AppProgressBar as ProgressBar } from 'next-nprogress-bar';
 
 
@@ -14,6 +13,12 @@ export default function Home() {
     useLenis();
     return (
         <>
+            <ProgressBar
+                height="4px"
+                color="#66ccff"
+                options={{ showSpinner: false }}
+                shallowRouting
+            />
             <div className='h-screen w-screen -mt-20 overflow-hidden'><ParticlesContainer /></div>
             <p className='flex absolute overflow-hidden right-0 -mt-48 text-lg mr-6 text-ieeeyellow -rotate-90'>Scroll</p>
             <div className='flex absolute overflow-hidden right-0 -mt-32  mr-6 motion-safe:animate-bounce bg-ieeeyellow rounded-full p-2'>
