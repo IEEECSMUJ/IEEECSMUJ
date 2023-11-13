@@ -15,7 +15,7 @@ export default function Home() {
         <>
             <ProgressBar
                 height="4px"
-                color="#66ccff"
+                color="#FFA300"
                 options={{ showSpinner: false }}
                 shallowRouting
             />
