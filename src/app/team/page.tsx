@@ -3,11 +3,19 @@
 import {ECTeamCard} from "~/app/components/team_card";
 import {CCTeamCard} from "~/app/components/team_card";
 import useLenis from "~/app/hooks/useLenis";
+import { AppProgressBar as ProgressBar } from 'next-nprogress-bar';
+import React from "react";
 
 export default function Page() {
     useLenis();
     return(
         <>
+            <ProgressBar
+                height="4px"
+                color="#FFA300"
+                options={{ showSpinner: false }}
+                shallowRouting
+            />
             <div className="bg-[#000000]">
                 <div  className="w-full py-12 bg-fixed">
                     <div className=" mx-auto px-4 lg:px-8">

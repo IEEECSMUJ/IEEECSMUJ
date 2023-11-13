@@ -4,12 +4,19 @@ import Image from "next/image";
 import logo1 from "~/app/assets/IEEE-logo-about.svg";
 import React from "react";
 import useLenis from "~/app/hooks/useLenis";
+import { AppProgressBar as ProgressBar } from 'next-nprogress-bar';
 
 
 export default function Page() {
     useLenis();
     return(
         <>
+            <ProgressBar
+                height="4px"
+                color="#FFA300"
+                options={{ showSpinner: false }}
+                shallowRouting
+            />
             <div className='bg-[#000000]'>
                 <div className="w-full py-12 bg-fixed">
                     <div className=" mx-auto px-4 lg:px-8">
