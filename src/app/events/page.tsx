@@ -1,9 +1,26 @@
+'use client'
+
 import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Page() {
+        AOS.init({
+            startEvent: 'DOMContentLoaded',
+            initClassName: 'aos-init',
+            animatedClassName: 'aos-animate',
+            debounceDelay: 50,
+            throttleDelay: 99,
+            offset: 120,
+            delay: 200,
+            duration: 800,
+            easing: 'ease',
+            anchorPlacement: 'top-bottom',
+
+        });
     return(
         <>
-            <div className=''>
+            <div className='' data-aos="fade-up">
                 <div className="bg-[#000000]">
                     <div className="xl:mx-auto max-w-7xl lg:mx-[10vw] justify-items-center mx-[5vw] min-h-screen max-h-screen flex items-center justify-center">
                         <div className="overflow-hidden grid grid-cols-1 md:grid-cols-2 md:w-full pb-8">
