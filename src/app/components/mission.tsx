@@ -31,7 +31,7 @@ const Mission = () => {
                             <p className="g:text-2xl text-xl text-white font-bold">Events</p>
                         </div>
                         <div className="">
-                            <p className="text-ieeeyellow text-xl lg:text-2xl"><CountUp end={3} duration={3}/></p>
+                            <p className="text-ieeeyellow text-xl lg:text-2xl"><CountUp end={3} duration={3}/>+</p>
                             <p className="g:text-2xl text-xl text-white font-bold">Societies</p>
                         </div>
                         <div className="">

@@ -25,7 +25,7 @@ const Faq = () => {
             </div>
             <div className='bg-[#000000]'>
                 <div className=" mx-auto px-4  lg:px-8">
-                    <p className="text-2xl text-center font-bold py-4 text-ieeeyellow">Who are we?</p>
+                    <p className="text-2xl text-center font-bold py-4    text-ieeeyellow">Who are we?</p>
                 </div>
             </div>
             <div className="max-w-7xl mx-auto px-4 lg:px-8 ">

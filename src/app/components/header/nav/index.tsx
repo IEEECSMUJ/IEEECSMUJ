@@ -13,17 +13,22 @@ const navItems = [
         href: "/",
     },
     {
-        title: "Blog",
-        href: "https://medium.com/@ieeecs",
+        title: "Events",
+        href: "/events",
     },
     {
         title: "About",
         href: "/about",
     },
     {
+        title: "Blog",
+        href: "https://medium.com/@ieeecs",
+    },
+    {
         title: "Team",
         href: "/team",
     },
+
 ]
 
 export default function index() {
