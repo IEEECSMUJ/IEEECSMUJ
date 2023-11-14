@@ -9,19 +9,22 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Mission = () => {
-    AOS.init({
-        startEvent: 'DOMContentLoaded',
-        initClassName: 'aos-init',
-        animatedClassName: 'aos-animate',
-        debounceDelay: 50,
-        throttleDelay: 99,
-        offset: 120,
-        delay: 200,
-        duration: 800,
-        easing: 'ease',
-        anchorPlacement: 'top-bottom',
+    window.addEventListener('load', () => {
+        AOS.init({
+            startEvent: 'DOMContentLoaded',
+            initClassName: 'aos-init',
+            animatedClassName: 'aos-animate',
+            debounceDelay: 50,
+            throttleDelay: 99,
+            offset: 120,
+            delay: 200,
+            duration: 800,
+            easing: 'ease',
+            anchorPlacement: 'top-bottom',
 
+        });
     });
+
     return (
         <>
             <div className='' data-aos="fade-up">

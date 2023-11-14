@@ -7,8 +7,6 @@ import Faq from "./components/faq"
 import useLenis from "~/app/hooks/useLenis";
 import ParticlesContainer from "~/app/components/ParticlesContainer";
 import { AppProgressBar as ProgressBar } from 'next-nprogress-bar';
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 
 export default function Home() {
@@ -30,9 +28,7 @@ export default function Home() {
             </div>
             <div id='scroll' className="">
                 <div className="bg-black">
-                    <div>
                         <Mission />
-                    </div>
                     <div >
                         <div className="w-full py-12 bg-fixed">
                             <div className=" mx-auto px-4 lg:px-8" data-aos="fade-up">
@@ -41,9 +37,7 @@ export default function Home() {
                         </div>
                         <Slider />
                     </div>
-                    <div data-aos="fade-up">
                         <Faq />
-                    </div>
                 </div>
             </div>
         </>
