@@ -27,6 +27,8 @@
     "@trpc/next": "^10.37.1",
     "@trpc/react-query": "^10.37.1",
     "@trpc/server": "^10.37.1",
+    "@types/aos": "^3.0.7",
+    "aos": "^3.0.0-beta.6",
     "framer-motion": "^10.16.4",
     "mongodb": "^6.2.0",
     "next": "^14.0.2",

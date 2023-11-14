@@ -19,7 +19,7 @@ const ParticlesContainer = () => {
     return (
         <div className='h-screen w-screen overflow-hidden'>
             <Particles
-                className='h-screen w-screen overflow-hidden absolute left-0 right-0 m-0 p-0 z-0'
+                className='h-screen w-screen overflow-hidden absolute top-0 left-0 right-0 m-0 p-0 z-0'
                 id='tsparticles' init={ParticlesInit} loaded={ParticlesLoaded} options={
                 {
                     "autoPlay": true,
