@@ -9,7 +9,7 @@ export function ECTeamCard() {
     return(
         <>
             <div>
-                <div className='mx-auto w-64 bg-ieeeorange bg-opacity-10 hover:-translate-y-8 duration-500 hover:shadow-lg hover:shadow-ieeeorange border-ieeeorange rounded-xl'>
+                <div className='mx-auto w-64 bg-ieeeorange bg-opacity-10 hover:-translate-y-6 duration-500 hover:shadow-lg hover:shadow-[#75787B] border-ieeeorange rounded-xl'>
                     <div className="relative overflow-hidden transition duration-500 transform rounded-lg">
                         <Image src={pujan} alt="Pujan Modha" className="object-cover rounded-lg w-full aspect-[3/4]"/>
                         <div className="absolute inset-0 flex flex-col justify-end px-4 py-2 transition-opacity duration-300 bg-[#292929] bg-opacity-40 opacity-0  hover:opacity-100">
@@ -60,7 +60,7 @@ export function CCTeamCard() {
     return(
         <>
             <div>
-                <div className='mx-auto w-64 bg-ieeeorange bg-opacity-10 hover:-translate-y-8 duration-500 hover:shadow-lg hover:shadow-ieeeorange border-ieeeorange rounded-full'>
+                <div className='mx-auto w-64 bg-ieeeorange bg-opacity-10 hover:-translate-y-6 duration-500 hover:shadow-lg hover:shadow-[#75787B] border-ieeeorange rounded-full'>
                     <div className="relative overflow-hidden transition duration-500 transform rounded-full">
                         <Image src={pujan} alt="Pujan Modha" className="object-cover rounded-full w-full aspect-square"/>
                         <div className="absolute inset-0 flex flex-col justify-end p-16 text-center transition-opacity duration-300 bg-[#292929] bg-opacity-40 opacity-0 hover:opacity-100">
