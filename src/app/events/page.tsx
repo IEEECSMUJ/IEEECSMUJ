@@ -3,7 +3,7 @@
 import React from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import {AppProgressBar as ProgressBar} from "next-nprogress-bar/dist/appDir";
+import { AppProgressBar as ProgressBar } from 'next-nprogress-bar';
 
 export default function Page() {
         AOS.init({
