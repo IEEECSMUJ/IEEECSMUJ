@@ -34,7 +34,7 @@ export default function Home() {
                 options={{ showSpinner: false }}
                 shallowRouting
             />
-            <div className='h-screen w-screen overflow-hidden'><ParticlesContainer /></div>
+            <div className='h-screen w-screen top-0 overflow-hidden'><ParticlesContainer /></div>
             <p className='flex absolute overflow-hidden right-0 -mt-48 lg:-mt-64 text-lg mr-6 text-ieeeyellow -rotate-90'>Scroll</p>
             <div className='flex absolute overflow-hidden right-0 -mt-32 lg:-mt-48  mr-6 motion-safe:animate-bounce bg-ieeeyellow rounded-full p-2'>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
