@@ -13,19 +13,6 @@ import "aos/dist/aos.css";
 
 export default function Home() {
     useLenis();
-    AOS.init({
-        startEvent: 'DOMContentLoaded',
-        initClassName: 'aos-init',
-        animatedClassName: 'aos-animate',
-        debounceDelay: 50,
-        throttleDelay: 99,
-        offset: 120,
-        delay: 200,
-        duration: 800,
-        easing: 'ease',
-        anchorPlacement: 'top-bottom',
-
-    });
     return (
         <>
             <ProgressBar
@@ -43,12 +30,12 @@ export default function Home() {
             </div>
             <div id='scroll' className="">
                 <div className="bg-black">
-                    <div data-aos="fade-up">
+                    <div>
                         <Mission />
                     </div>
-                    <div data-aos="fade-up">
+                    <div >
                         <div className="w-full py-12 bg-fixed">
-                            <div className=" mx-auto px-4 lg:px-8">
+                            <div className=" mx-auto px-4 lg:px-8" data-aos="fade-up">
                                 <p className="text-5xl text-center font-bold text-ieeeyellow">Events Gallery</p>
                             </div>
                         </div>

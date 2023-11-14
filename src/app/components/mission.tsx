@@ -5,12 +5,26 @@ import Link from "next/link";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import CountUp from "react-countup";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Mission = () => {
+    AOS.init({
+        startEvent: 'DOMContentLoaded',
+        initClassName: 'aos-init',
+        animatedClassName: 'aos-animate',
+        debounceDelay: 50,
+        throttleDelay: 99,
+        offset: 120,
+        delay: 200,
+        duration: 800,
+        easing: 'ease',
+        anchorPlacement: 'top-bottom',
+
+    });
     return (
         <>
-            <div className=''>
+            <div className='' data-aos="fade-up">
                 <div className='max-w-7xl mx-auto px-4 lg:px-8'>
                     <div className=" mx-auto px-4 py-4 lg:px-8">
                         <p className="text-5xl text-center font-bold text-ieeeyellow">IEEE Computer Society</p>
