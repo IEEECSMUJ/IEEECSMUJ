@@ -22,7 +22,7 @@ export default function Home() {
        <div className="">
            {loading ? <div className="flex h-screen bg-black items-start">
                    <video
-                       className="videolc h-screen md:h-auto justify-center md:justify-around items-center md:items-start flex md:-mt-40 md:scale-75 scale-100"
+                       className="videolc h-screen md:h-auto justify-center md:justify-around items-center md:items-start flex -mt-36 md:-mt-40 md:scale-75 scale-100"
                        id="bg-video"
                        autoPlay={true}
                        muted={true}
