@@ -61,14 +61,14 @@ export default function Home() {
                 <div id='scroll' className="">
                     <div className="bg-black">
                         <Mission/>
-                        <div>
-                            <div className="w-full py-12 bg-fixed">
-                                <div className=" mx-auto px-4 lg:px-8" data-aos="fade-up">
-                                    <p className="text-5xl text-center font-bold text-ieeeyellow">Events Gallery</p>
-                                </div>
-                            </div>
-                            <Slider/>
-                        </div>
+                        {/*<div>*/}
+                        {/*    <div className="w-full py-12 bg-fixed">*/}
+                        {/*        <div className=" mx-auto px-4 lg:px-8" data-aos="fade-up">*/}
+                        {/*            <p className="text-5xl text-center font-bold text-ieeeyellow">Events Gallery</p>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*    <Slider/>*/}
+                        {/*</div>*/}
                         <Faq/>
                     </div>
                 </div>
