@@ -37,6 +37,7 @@
     "react-countup": "^6.5.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
+    "react-player": "^2.14.1",
     "react-tsparticles": "^2.9.3",
     "sass": "^1.69.5",
     "superjson": "^1.13.1",
