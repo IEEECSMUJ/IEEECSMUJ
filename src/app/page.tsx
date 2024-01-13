@@ -12,22 +12,14 @@ import ReactPlayer from 'react-player'
 
 export default function Home() {
     const [playing, setPlaying] = useState(true);
-    // useEffect(() => {
-    //     setLoading(true);
-    //     setTimeout(() => {
-    //         setLoading(false);
-    //     }, 5000);
-    // }, []);
     useLenis();
-    const [windowSize, setWindowSize] = useState({
-        width: window.innerWidth,
-        height: window.innerHeight,
-    });
-    const [navBarH, setNH] = useState(0)
+    const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
+    const [navBarH, setNH] = useState(0);
     useEffect(() => {
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         //@ts-ignore
-        setNH((document.querySelector("#navbar"))?.clientHeight)
+        setNH(document.querySelector("#navbar")?.clientHeight);
+        setWindowSize({ height: window.innerHeight, width: window.innerWidth });
     }, []);
     const isMobile = windowSize.width <= 720 && windowSize.height <= 1280
     return (
@@ -41,12 +33,21 @@ export default function Home() {
                 />
                 <div className='h-screen w-screen overflow-hidden relative'>
                     <ReactPlayer
-                        url='/cs-microchip.mp4'
-                        style={{margin : "auto"}}
-                        playing={playing} progressInterval={100} width={isMobile ? windowSize.width * 0.8 : windowSize.width}
-                        height={isMobile ? windowSize.height * 0.75: windowSize.height - navBarH} onProgress={(n) => {
-                        if (n.playedSeconds >= 4.8) setPlaying(false)
-                    }}/>
+                        url="/cs-microchip.mp4"
+                        style={{ margin: "auto" }}
+                        playing={playing}
+                        progressInterval={100}
+                        width={isMobile ? windowSize.width * 0.8 : windowSize.width}
+                        height={
+                            isMobile ? windowSize.height * 0.75 : windowSize.height - navBarH
+                        }
+                        muted
+                        pip={false}
+
+                        onProgress={(n) => {
+                            if (n.playedSeconds >= 4.8) setPlaying(false);
+                        }}
+                    />
                 </div>
                 <p className='flex absolute overflow-hidden right-0 -mt-64 lg:-mt-64 text-lg mr-6 text-ieeeyellow -rotate-90'>Scroll</p>
                 <div
