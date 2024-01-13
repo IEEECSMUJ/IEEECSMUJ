@@ -38,21 +38,21 @@ const Mission = () => {
                             <p className='text-center my-4 text-ieeeorange hover:underline'><Link target = "no_ref" href="https://computer.org">Learn more at computer.org</Link></p>
                         </div>
                     </div>
-                    <div className="flex flex-wrap gap-12 px-4 lg:px-8 justify-around mx-auto border-ieeeyellow border-2 border-dashed rounded-lg text-center py-8 my-8 max-w-7xl">
+                    <div className="flex bg-[#292929] bg-opacity-30 backdrop-blur-0 shadow flex-wrap gap-12 px-4 lg:px-8 justify-around mx-auto border-ieeeyellow  rounded-lg text-center py-8 my-8 max-w-7xl">
                         <div className="">
-                            <p className="text-ieeeyellow text-xl lg:text-2xl"><CountUp end={1000} duration={3}/>+</p>
+                            <p className="text-ieeeyellow font-bold text-xl lg:text-2xl"><CountUp end={1000} duration={3}/>+</p>
                             <p className="g:text-2xl text-xl text-white font-bold">Members</p>
                         </div>
                         <div className="">
-                            <p className="text-ieeeyellow text-xl lg:text-2xl"><CountUp end={100} duration={3}/>+</p>
+                            <p className="text-ieeeyellow font-bold text-xl lg:text-2xl"><CountUp end={100} duration={3}/>+</p>
                             <p className="g:text-2xl text-xl text-white font-bold">Events</p>
                         </div>
                         <div className="">
-                            <p className="text-ieeeyellow text-xl lg:text-2xl"><CountUp end={3} duration={3}/>+</p>
+                            <p className="text-ieeeyellow font-bold text-xl lg:text-2xl"><CountUp end={3} duration={3}/>+</p>
                             <p className="g:text-2xl text-xl text-white font-bold">Societies</p>
                         </div>
                         <div className="">
-                            <p className="text-ieeeyellow text-xl lg:text-2xl"><CountUp end={10} duration={3}/>+</p>
+                            <p className="text-ieeeyellow font-bold text-xl lg:text-2xl"><CountUp end={10} duration={3}/>+</p>
                             <p className="lg:text-2xl text-xl text-white font-bold">Mentors</p>
                         </div>
                     </div>

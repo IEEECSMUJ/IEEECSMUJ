@@ -36,7 +36,7 @@ export default function Home() {
                         url="/cs-microchip.mp4"
                         style={{ margin: "auto" }}
                         playing={playing}
-                        progressInterval={100}
+                        progressInterval={50}
                         width={isMobile ? windowSize.width * 0.8 : windowSize.width}
                         height={
                             isMobile ? windowSize.height * 0.75 : windowSize.height - navBarH
@@ -51,7 +51,7 @@ export default function Home() {
                 </div>
                 <p className='flex absolute overflow-hidden right-0 -mt-64 lg:-mt-64 text-lg mr-6 text-ieeeyellow -rotate-90'>Scroll</p>
                 <div
-                    className='flex absolute overflow-hidden right-0 -mt-48 lg:-mt-48  mr-6 motion-safe:animate-bounce bg-ieeeyellow rounded-full p-2'>
+                    className='flex absolute overflow-hidden right-0 -mt-48 lg:-mt-48 mr-6 motion-safe:animate-bounce bg-ieeeyellow rounded-full p-2'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
                          stroke="currentColor" className="w-8 h-8">
                         <path strokeLinecap="round" strokeLinejoin="round"
