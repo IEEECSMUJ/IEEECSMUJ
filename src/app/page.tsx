@@ -24,7 +24,7 @@ export default function Home() {
     }, []);
     const isMobile = windowSize.width <= 720 && windowSize.height <= 1280
     useEffect(() => {
-        const navbar = document.querySelector("#navbar") as HTMLElement | null;
+        const navbar: HTMLElement = document.querySelector("#navbar")!;
         if (navbar) {
             if (playing) {
                 navbar.style.opacity = "0";
@@ -34,7 +34,7 @@ export default function Home() {
         }
     }, [playing]);
     useEffect(() => {
-        const navbar = document.querySelector("#scrollmark") as HTMLElement | null;
+        const navbar: HTMLElement = document.querySelector("#scrollmark")!;
         if (navbar) {
             if (playing) {
                 navbar.style.opacity = "0";
@@ -66,7 +66,7 @@ export default function Home() {
                         pip={false}
 
                         onProgress={(n) => {
-                            if (n.playedSeconds >= 4.8) setPlaying(false);
+                            if (n.playedSeconds >= 4.85) setPlaying(false);
                         }}
                     />
                 </div>
