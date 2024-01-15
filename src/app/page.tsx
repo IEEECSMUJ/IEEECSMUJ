@@ -73,7 +73,7 @@ export default function Home() {
             This is the home page for ieee cs muj's website."/>
             </Head>
             <div className='h-screen w-screen overflow-hidden relative'>
-                <video src="/cs-microchip.mp4" autoPlay muted height={
+                <video src="/cs-microchip.mp4" className="mx-auto relative" autoPlay muted height={
                     isMobile ? windowSize.height * 0.75 : windowSize.height - navBarH
                 } width={isMobile ? windowSize.width * 0.8 : windowSize.width} playsInline
                        style={{height: isMobile ? windowSize.height * 0.75 : windowSize.height - navBarH, width: isMobile ? windowSize.width * 0.8 : windowSize.width}}
