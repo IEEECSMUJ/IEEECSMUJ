@@ -5,6 +5,8 @@ import Mission from "~/app/components/mission";
 import Faq from "./components/faq"
 import useLenis from "~/app/hooks/useLenis";
 import {AppProgressBar as ProgressBar} from 'next-nprogress-bar';
+import Head from "next/head";
+import { NextSeo } from 'next-seo';
 
 
 export default function Home() {
@@ -39,12 +41,37 @@ export default function Home() {
     }, [playing]);
     return (
         <div>
+            <NextSeo
+                title="Home | IEEE CS MUJ"
+                description="This is the official website of IEEE Computer Society Manipal University Jaipur.
+            Serving computing at its best with inclusion and diversity” is the prime motto of the IEEE Computer Society.
+            This society was created keeping in mind IEEE’s continued commitment to providing options at best.
+            he IEEE Computer Society is driven by the central goals of equity, diversity, inclusion,
+            and yearn to serve computing at its perfection."
+                openGraph={{
+                    url: 'https://ieeecsmuj.vercel.app',
+                    title: 'title',
+                    description: 'Open Graph Description'
+                }}
+                twitter={{
+                    handle: '@ieeecsmuj',
+                    site: '@site',
+                    cardType: 'summary_large_image',
+                }}
+            />
             <ProgressBar
                 height="4px"
                 color="#FFA300"
                 options={{showSpinner: false}}
                 shallowRouting
             />
+            <Head>
+                <meta name="description"
+                      content="Serving computing at its best with inclusion and diversity” is the prime motto of the IEEE CS MUJ.
+            This society was created keeping in mind IEEE’s continued commitment to providing options at best.
+            The IEEE Computer Society Manipal University Jaipur is driven by the central goals of equity, diversity, inclusion, and yearn to serve computing at its perfection.
+            This is the home page for ieee cs muj's website."/>
+            </Head>
             <div className='h-screen w-screen overflow-hidden relative'>
                 <video src="/cs-microchip.mp4" autoPlay muted height={
                     isMobile ? windowSize.height * 0.75 : windowSize.height - navBarH

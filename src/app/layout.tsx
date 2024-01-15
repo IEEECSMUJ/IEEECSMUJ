@@ -11,6 +11,7 @@ import Script from "next/script"
 import Header from './components/header';
 import logo2 from "./assets/IEEE-logo-about.svg";
 import Image from "next/image";
+import {NextSeo} from "next-seo";
 
 
 const poppins = Poppins({
@@ -21,7 +22,7 @@ const poppins = Poppins({
 
 export const metadata = {
     title: "IEEE CS MUJ",
-    description: "",
+    description: "IEEE Computer Society, Manipal University Jaipur is a group of driven individuals striving to create and spread awareness about various technologies that surround us.",
     icons: [{rel: "icon", url: "/favicon.svg"}],
 };
 
@@ -34,17 +35,13 @@ export default function RootLayout({
 
     return (
         <html lang="en">
-        <Head>
-            <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-        </Head>
+
         <body className={`font-sans bg-black ${poppins.variable}`}>
         <Navbar/>
         <div className='bg-black overflow-hidden text-white'>
             <TRPCReactProvider headers={headers()}>{children}</TRPCReactProvider>
             <Footer/>
         </div>
-        <Script src="https://unpkg.com/aos@next/dist/aos.js"/>
-        <Script src="/js/AOSUtil.js"/>
         </body>
         </html>
     );
