@@ -5,6 +5,18 @@
 await import("./src/env.mjs");
 
 /** @type {import("next").NextConfig} */
-const config = {};
+const config = {
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'images.prismic.io',
+            },{
+                protocol: 'https',
+                hostname: 'www.shutterstock.com',
+            },
+        ],
+    }
+};
 
 export default config;

@@ -17,7 +17,7 @@ export default function Home() {
     return (
         <>
             <div className={styles.main}>
-                <div className={styles.header}>
+                <div className={styles.header + " z-[20]"}>
                     <div onClick={() => {setIsActive(!isActive)}} className={styles.button}>
                         <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}></div>
                     </div>

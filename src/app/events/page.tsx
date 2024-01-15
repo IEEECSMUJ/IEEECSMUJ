@@ -2,6 +2,7 @@
 
 import React from "react";
 import { AppProgressBar as ProgressBar } from 'next-nprogress-bar';
+import {motion} from "framer-motion";
 
 export default function Page() {
 
@@ -13,7 +14,8 @@ export default function Page() {
                 options={{ showSpinner: false }}
                 shallowRouting
             />
-            <div className='' data-aos="fade-up">
+            <motion.div className="bg-[#000000]" initial={{opacity: 0, y: 50}} whileInView={{opacity: 1, y: 0}}
+                        transition={{duration: 0.3, ease: 'linear', type: "tween"}}>
                 <div className="bg-[#000000]">
                     <div className="xl:mx-auto max-w-7xl lg:mx-[10vw] justify-items-center mx-[5vw] min-h-screen max-h-screen flex items-center justify-center">
                         <div className="overflow-hidden grid grid-cols-1 md:grid-cols-2 md:w-full pb-8">
@@ -26,7 +28,7 @@ export default function Page() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </>
     )
 }

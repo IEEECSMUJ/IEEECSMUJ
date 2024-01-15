@@ -5,12 +5,14 @@ import Link from "next/link";
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import CountUp from "react-countup";
+import {motion} from "framer-motion";
 
 const Mission = () => {
 
     return (
         <>
-            <div>
+            <motion.div className="bg-[#000000]" initial={{opacity: 0, y: 75}} whileInView={{opacity: 1, y: 0}}
+                        transition={{duration: 0.3, ease: 'linear', type: "tween"}}>
                 <div className='max-w-7xl mx-auto px-4 lg:px-8'>
                     <div className=" mx-auto px-4 py-4 lg:px-8">
                         <p className="text-5xl text-center font-bold text-ieeeyellow">IEEE Computer Society</p>
@@ -48,7 +50,7 @@ const Mission = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </>
     );
 };

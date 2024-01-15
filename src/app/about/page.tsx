@@ -5,6 +5,7 @@ import logo1 from "~/app/assets/IEEE-logo-about.svg";
 import React from "react";
 import useLenis from "~/app/hooks/useLenis";
 import { AppProgressBar as ProgressBar } from 'next-nprogress-bar';
+import {motion} from "framer-motion"
 
 
 export default function Page() {
@@ -18,7 +19,8 @@ export default function Page() {
                 options={{ showSpinner: false }}
                 shallowRouting
             />
-            <div className='bg-[#000000]' data-aos="fade-up">
+            <motion.div className="bg-[#000000]" initial={{opacity: 0, y: 50}} whileInView={{opacity: 1, y: 0}}
+                        transition={{duration: 0.3, ease: 'linear', type: "tween"}}>
                 <div className="w-full py-12 bg-fixed">
                     <div className=" mx-auto px-4 lg:px-8 " >
                         <p className="text-5xl text-center font-bold text-ieeeyellow">About Us</p>
@@ -45,7 +47,7 @@ export default function Page() {
                     </div>
                     <hr className="mt-1 border-ieeegray opacity-20"/>
                 </div>
-            </div>
+            </motion.div>
         </>
     )
 }

@@ -1,10 +1,12 @@
 
 import React, {useState} from "react";
 import AccordionData from "../data/AccordianData";
+import {motion} from "framer-motion";
 
 const FAQ = () => {
     return (
-        <section className="relative z-10 px-4 overflow-hidden" >
+        <motion.section className="relative z-10 px-4 overflow-hidden" initial={{opacity: 0, y: 75}} whileInView={{opacity: 1, y: 0}}
+                        transition={{duration: 0.3, ease: 'linear', type: "tween"}}>
             <div className='justify-center'>
                 <h1 className='lg:text-5xl text-4xl text-center text-ieeeyellow font-semibold pb-[2.5vh]'>FAQs</h1>
             </div>
@@ -20,7 +22,7 @@ const FAQ = () => {
                     ))}
                 </div>
             </div>
-        </section>
+        </motion.section>
     );
 };
 
