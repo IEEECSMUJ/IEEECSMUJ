@@ -16,7 +16,7 @@ async function generateSitemap() {
     const urlSet = pages
         .map(
             (x) =>
-                `<url><loc>https://ieeecsmuj.vercel.app${x
+                `<url><loc>https://cs.ieeemuj.com${x
                     .replace("pages/", "/")
                     .replace(".tsx", "")
                     .replace(".mdx", "")

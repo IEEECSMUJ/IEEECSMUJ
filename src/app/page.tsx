@@ -49,7 +49,7 @@ export default function Home() {
             he IEEE Computer Society is driven by the central goals of equity, diversity, inclusion,
             and yearn to serve computing at its perfection."
                 openGraph={{
-                    url: 'https://ieeecsmuj.vercel.app',
+                    url: 'https://cs.ieeemuj.com',
                     title: 'title',
                     description: 'Open Graph Description'
                 }}
