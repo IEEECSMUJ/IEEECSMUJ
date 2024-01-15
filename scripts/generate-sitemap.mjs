@@ -21,7 +21,8 @@ async function generateSitemap() {
                     .replace(".tsx", "")
                     .replace(".mdx", "")
                     .replace("index", "")
-                    .replace("page" , "")}</loc></url>`
+                    .replace("page" , "")
+                    .replace("app" , "")}</loc></url>`
         )
         .join("");
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urlSet}</urlset>`;
