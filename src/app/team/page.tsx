@@ -43,12 +43,7 @@ export default function Page() {
                             <p className="text-3xl text-center font-semibold text-ieeeyellow">Executive Committee</p>
                             <hr className="mt-1 border-ieeegray opacity-20"/>
                         </div>
-                        <div className="flex  flex-wrap gap-24 mx-auto justify-center">
-                            <ECTeamCard/>
-                            <ECTeamCard/>
-                            <ECTeamCard/>
-                            <ECTeamCard/>
-                            <ECTeamCard/>
+                        <div className="grid md:grid-cols-3 grid-cols-1 gap-16 mx-auto justify-center">
                             <ECTeamCard/>
                         </div>
                     </div>
@@ -57,13 +52,7 @@ export default function Page() {
                             <p className="text-3xl text-center font-semibold text-ieeeyellow">Core Committee</p>
                             <hr className="mt-1 border-ieeegray opacity-20"/>
                         </div>
-                        <div className="flex flex-wrap gap-16 mx-auto justify-center">
-                            <CCTeamCard/>
-                            <CCTeamCard/>
-                            <CCTeamCard/>
-                            <CCTeamCard/>
-                            <CCTeamCard/>
-                            <CCTeamCard/>
+                        <div className="grid md:grid-cols-3 grid-cols-1 gap-16 mx-auto justify-center">
                             <CCTeamCard/>
                         </div>
                     </div>
