@@ -1,26 +1,10 @@
-'use client'
 
-import React, { useState } from "react";
+import React, {useState} from "react";
 import AccordionData from "../data/AccordianData";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const FAQ = () => {
-    AOS.init({
-        startEvent: 'DOMContentLoaded',
-        initClassName: 'aos-init',
-        animatedClassName: 'aos-animate',
-        debounceDelay: 50,
-        throttleDelay: 99,
-        offset: 120,
-        delay: 200,
-        duration: 800,
-        easing: 'ease',
-        anchorPlacement: 'top-bottom',
-
-    });
     return (
-        <section className="relative z-10 px-4 overflow-hidden" data-aos="fade-up">
+        <section className="relative z-10 px-4 overflow-hidden" >
             <div className='justify-center'>
                 <h1 className='lg:text-5xl text-4xl text-center text-ieeeyellow font-semibold pb-[2.5vh]'>FAQs</h1>
             </div>
@@ -29,6 +13,7 @@ const FAQ = () => {
                     {AccordionData.map((accordion, index) => (
                         // eslint-disable-next-line react/jsx-key
                         <AccordionItem
+                            key={index}
                             header={accordion.accordionQuestion}
                             text={accordion.accordionAnswer}
                         />
@@ -42,7 +27,7 @@ const FAQ = () => {
 export default FAQ;
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-const AccordionItem = ({ header, text }) => {
+const AccordionItem = ({header, text}) => {
     const [active, setActive] = useState(false);
 
     const handleToggle = () => {
@@ -84,7 +69,8 @@ const AccordionItem = ({ header, text }) => {
             {/*        <p className='my-4'>Our mission is to inspire innovation, collaboration, and continuous learning!</p>*/}
             {/*    </div>*/}
             {/*</div>*/}
-            <div className="single-faq  max-w-7xl mx-auto mt-4 rounded-lg w-full bg-[#292929] bg-opacity-30 backdrop-blur-0 shadow p-4 sm:p-8 lg:px-6 xl:px-8">
+            <div
+                className="single-faq  max-w-7xl mx-auto mt-4 rounded-lg w-full bg-[#292929] bg-opacity-30 backdrop-blur-0 shadow p-4 sm:p-8 lg:px-6 xl:px-8">
                 <button
                     className={`faq-btn flex w-full text-left`}
                     onClick={() => handleToggle()}
@@ -92,7 +78,8 @@ const AccordionItem = ({ header, text }) => {
                     <div className="w-full">
                         <h4 className="lg:text-lg text-base font-semibold text-ieeeyellow">{header}</h4>
                     </div>
-                    <div className=" mr-0 flex h-7 w-full max-w-[40px] items-center justify-center rounded-lg bg-ieeeyellow bg-opacity-100 text-ieeeyellow">
+                    <div
+                        className=" mr-0 flex h-7 w-full max-w-[40px] items-center justify-center rounded-lg bg-ieeeyellow bg-opacity-100 text-ieeeyellow">
                         <svg
                             className={`duration-250 fill-[#292929] ease-in-out fill-primary stroke-primary ${
                                 active ? "rotate-180" : ""

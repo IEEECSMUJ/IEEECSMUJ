@@ -5,24 +5,11 @@ import logo1 from "~/app/assets/IEEE-logo-about.svg";
 import React from "react";
 import useLenis from "~/app/hooks/useLenis";
 import { AppProgressBar as ProgressBar } from 'next-nprogress-bar';
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 
 export default function Page() {
     useLenis();
-    AOS.init({
-        startEvent: 'DOMContentLoaded',
-        initClassName: 'aos-init',
-        animatedClassName: 'aos-animate',
-        throttleDelay: 99,
-        offset: 120,
-        delay: 200,
-        duration: 800,
-        easing: 'ease',
-        anchorPlacement: 'top-bottom',
 
-    });
     return(
         <>
             <ProgressBar

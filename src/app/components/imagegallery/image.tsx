@@ -3,23 +3,8 @@
 import React, {useState} from 'react';
 import {BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs';
 import {RxDotFilled} from 'react-icons/rx';
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 function Slider() {
-    AOS.init({
-        startEvent: 'DOMContentLoaded',
-        initClassName: 'aos-init',
-        animatedClassName: 'aos-animate',
-        debounceDelay: 50,
-        throttleDelay: 99,
-        offset: 120,
-        delay: 200,
-        duration: 800,
-        easing: 'ease',
-        anchorPlacement: 'top-bottom',
-
-    });
     const slides = [
         {
             url: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80',
