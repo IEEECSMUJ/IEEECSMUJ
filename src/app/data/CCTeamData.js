@@ -243,7 +243,7 @@ const CCTeamData = [
     },
     {
         name: "Yash Prasad",
-        imageURL: "https://www.shutterstock.com/image-vector/user-profile-icon-vector-avatar-600nw-2220431045.jpg",
+        imageURL: "https://images.prismic.io/ieeemuj/95e6e095-afd9-4f76-a636-aa7ef1c5eaa0_yash+prasad+cs.jpg",
         position: "Joint Head of Logistics",
         hasLinkedIn: true,
         linkedInURL: "https://www.linkedin.com/in/yash-prasad-821b9a248/",
