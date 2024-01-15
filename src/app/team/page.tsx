@@ -21,7 +21,6 @@ export default function Page() {
         duration: 800,
         easing: 'ease',
         anchorPlacement: 'top-bottom',
-
     });
     return(
         <>

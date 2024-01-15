@@ -5,10 +5,8 @@ import React, {useEffect, useState} from "react";
 import Mission from "~/app/components/mission";
 import Faq from "./components/faq"
 import useLenis from "~/app/hooks/useLenis";
-import ParticlesContainer from "~/app/components/ParticlesContainer";
 import {AppProgressBar as ProgressBar} from 'next-nprogress-bar';
 import ReactPlayer from 'react-player'
-import Header from './components/header/index'
 
 
 export default function Home() {
