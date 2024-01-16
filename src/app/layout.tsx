@@ -6,12 +6,8 @@ import {TRPCReactProvider} from "~/trpc/react";
 import Navbar from "~/app/components/navbar";
 import Footer from "~/app/components/footer";
 import React from "react";
-import Head from "next/head"
-import Script from "next/script"
-import Header from './components/header';
-import logo2 from "./assets/IEEE-logo-about.svg";
-import Image from "next/image";
-import {NextSeo} from "next-seo";
+import {Metadata} from "next";
+import Head from "next/head";
 
 
 const poppins = Poppins({
@@ -20,12 +16,17 @@ const poppins = Poppins({
     variable: "--font-sans",
 });
 
-export const metadata = {
-    title: "IEEE CS MUJ",
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+export const metadata: Metadata = {
+    title: "IEEE Computer Society MUJ",
     description: "IEEE Computer Society, Manipal University Jaipur is a group of driven individuals striving to create and spread awareness about various technologies that surround us.",
     icons: [{rel: "icon", url: "/favicon.svg"}],
-};
+    keywords: ["ieeecsmuj, IEEE CS MUJ, IEEE, Genesis, IEEEMUJ, MUJ, CS Club, Manipal University Jaipur, Computer Society Club MUJ, Jaipur, Manipal's Biggest , Technical club, ieee student chapter "],
+    alternates: {
+        canonical: "https://cs.ieeemuj.com"
+    }
 
+};
 export default function RootLayout({
 
                                        children,
@@ -35,7 +36,9 @@ export default function RootLayout({
 
     return (
         <html lang="en">
-
+        <Head>
+            <link rel="canonical" href="https://cs.ieeemuj.com"/>
+        </Head>
         <body className={`font-sans bg-black ${poppins.variable}`}>
         <Navbar/>
         <div className='bg-black overflow-hidden text-white'>

@@ -1,5 +1,4 @@
 'use client'
-
 import React, {useEffect, useState} from "react";
 import Mission from "~/app/components/mission";
 import Faq from "./components/faq"
