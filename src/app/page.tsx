@@ -51,7 +51,8 @@ export default function Home() {
                 openGraph={{
                     url: 'https://cs.ieeemuj.com',
                     title: 'title',
-                    description: 'Open Graph Description'
+                    description: 'Open Graph Description',
+                    siteName: 'IEEE CS MUJ',
                 }}
                 twitter={{
                     handle: '@ieeecsmuj',
