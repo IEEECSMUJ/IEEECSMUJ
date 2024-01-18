@@ -47,6 +47,7 @@ export default function Home() {
             This society was created keeping in mind IEEE’s continued commitment to providing options at best.
             he IEEE Computer Society is driven by the central goals of equity, diversity, inclusion,
             and yearn to serve computing at its perfection."
+
                 openGraph={{
                     url: 'https://cs.ieeemuj.com',
                     title: 'title',

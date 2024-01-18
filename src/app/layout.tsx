@@ -20,8 +20,8 @@ const poppins = Poppins({
 export const metadata: Metadata = {
     title: "IEEE Computer Society MUJ",
     description: "IEEE Computer Society, Manipal University Jaipur is a group of driven individuals striving to create and spread awareness about various technologies that surround us.",
-    icons: [{rel: "icon", url: "/favicon.svg"}],
-    keywords: ["ieeecsmuj, IEEE CS MUJ, IEEE, Genesis, IEEEMUJ, MUJ, CS Club, Manipal University Jaipur, Computer Society Club MUJ, Jaipur, Manipal's Biggest , Technical club, ieee student chapter "],
+    icons: [{rel: "icon", url: "/favicon.ico"}],
+    keywords: ["ieeecsmuj, ieee cs muj , IEEE CS MUJ, IEEE, Genesis, IEEEMUJ, MUJ, CS Club, Manipal University Jaipur, Computer Society Club MUJ, Jaipur, Manipal's Biggest , Technical club, ieee student chapter "],
     alternates: {
         canonical: "https://cs.ieeemuj.com"
     }
@@ -37,7 +37,20 @@ export default function RootLayout({
     return (
         <html lang="en">
         <Head>
+            <title>IEEE CS MUJ</title>
             <link rel="canonical" href="https://cs.ieeemuj.com"/>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        '@context': 'https://schema.org',
+                        '@type': 'Organization',
+                        name: 'IEEE CS MUJ',
+                        url: 'https://cs.ieeemuj.com',
+                        // Add more structured data properties here
+                    }),
+                }}
+            />
         </Head>
         <body className={`font-sans bg-black ${poppins.variable}`}>
         <Navbar/>
