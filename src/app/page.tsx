@@ -71,7 +71,7 @@ export default function Home() {
                       content="Serving computing at its best with inclusion and diversity” is the prime motto of the IEEE CS MUJ.
             This society was created keeping in mind IEEE’s continued commitment to providing options at best.
             The IEEE Computer Society Manipal University Jaipur is driven by the central goals of equity, diversity, inclusion, and yearn to serve computing at its perfection.
-            This is the home page for ieee cs muj's website."/>
+            This is the home page for IEEE Computer Society MUJ."/>
             </Head>
             <div className='h-screen w-screen overflow-hidden relative'>
                 <video src="/cs-microchip.mp4" className="mx-auto relative" autoPlay muted height={
