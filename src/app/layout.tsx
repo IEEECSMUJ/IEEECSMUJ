@@ -18,7 +18,7 @@ const poppins = Poppins({
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 export const metadata: Metadata = {
-    title: "IEEE Computer Society MUJ",
+    title: "IEEE CS MUJ",
     description: "IEEE Computer Society, Manipal University Jaipur is a group of driven individuals striving to create and spread awareness about various technologies that surround us.",
     icons: [{rel: "icon", url: "/favicon.ico"}],
     keywords: ["ieeecsmuj, ieee cs muj , IEEE CS MUJ, IEEE, Genesis, IEEEMUJ, MUJ, CS Club, Manipal University Jaipur, Computer Society Club MUJ, Jaipur, Manipal's Biggest , Technical club, ieee student chapter "],

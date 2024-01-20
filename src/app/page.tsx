@@ -41,7 +41,7 @@ export default function Home() {
     return (
         <div>
             <NextSeo
-                title="Home | IEEE CS MUJ"
+                title="IEEE CS MUJ | HOME"
                 description="This is the official website of IEEE Computer Society Manipal University Jaipur.
             Serving computing at its best with inclusion and diversity” is the prime motto of the IEEE Computer Society.
             This society was created keeping in mind IEEE’s continued commitment to providing options at best.
