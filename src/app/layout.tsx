@@ -16,7 +16,6 @@ const poppins = Poppins({
     variable: "--font-sans",
 });
 
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 export const metadata: Metadata = {
     title: "IEEE CS MUJ",
     description: "IEEE Computer Society, Manipal University Jaipur is a group of driven individuals striving to create and spread awareness about various technologies that surround us.",
@@ -24,8 +23,22 @@ export const metadata: Metadata = {
     keywords: ["ieeecsmuj, ieee cs muj , IEEE CS MUJ, IEEE, Genesis, IEEEMUJ, MUJ, CS Club, Manipal University Jaipur, Computer Society Club MUJ, Jaipur, Manipal's Biggest , Technical club, ieee student chapter "],
     alternates: {
         canonical: "https://cs.ieeemuj.com"
-    }
-
+    },
+    openGraph: {
+        title: 'IEEE CS MUJ',
+        description: 'IEEE Computer Society MUJ is a group of driven individuals striving to create and spread awareness about various technologies that surrounds us.',
+        url: 'https://cs.ieeemuj.com',
+        siteName: 'IEEE CS MUJ',
+        images: [
+            {
+                url: 'https://nextjs.org/opengraph-image.jpg', // Must be an absolute URL
+                width: 800,
+                height: 600,
+            },
+        ],
+        locale: 'en_US',
+        type: 'website',
+    },
 };
 export default function RootLayout({
 

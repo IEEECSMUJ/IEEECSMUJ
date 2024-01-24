@@ -5,7 +5,6 @@ import Faq from "./components/faq"
 import useLenis from "~/app/hooks/useLenis";
 import {AppProgressBar as ProgressBar} from 'next-nprogress-bar';
 import Head from "next/head";
-import { NextSeo } from 'next-seo';
 
 
 export default function Home() {
@@ -40,26 +39,7 @@ export default function Home() {
     }, [playing]);
     return (
         <div>
-            <NextSeo
-                title="IEEE CS MUJ | HOME"
-                description="This is the official website of IEEE Computer Society Manipal University Jaipur.
-            Serving computing at its best with inclusion and diversity” is the prime motto of the IEEE Computer Society.
-            This society was created keeping in mind IEEE’s continued commitment to providing options at best.
-            he IEEE Computer Society MUJ is driven by the central goals of equity, diversity, inclusion,
-            and yearn to serve computing at its perfection."
 
-                openGraph={{
-                    url: 'https://cs.ieeemuj.com',
-                    title: 'title',
-                    description: 'Open Graph Description',
-                    siteName: 'IEEE CS MUJ',
-                }}
-                twitter={{
-                    handle: '@ieeecsmuj',
-                    site: '@site',
-                    cardType: 'summary_large_image',
-                }}
-            />
             <ProgressBar
                 height="4px"
                 color="#FFA300"
