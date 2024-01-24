@@ -1,4 +1,7 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
 User-agent: *
-Disallow:
-Disallow: /cgi-bin/
-Sitemap: https://cs.ieeemuj.com/sitemap.xml
+Allow: /
+
+Sitemap: https://www.example.com/sitemap.xml
