@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { AppProgressBar as ProgressBar } from "next-nprogress-bar";
 import Link from "next/link";
 import eventsData from "~/app/data/eventdata";
+import Image from "next/image";
 
 
 export default function Page() {
@@ -58,10 +59,12 @@ export default function Page() {
                 key={event.id}
                 className="overflow-hidden rounded-lg bg-black shadow-lg"
               >
-                <img
+                <Image
                   src={event.imageUrl}
                   alt={event.title}
                   className="h-64 w-full object-cover"
+                  width= {512}
+                  height={512}
                 />
                 <div className="p-4">
                   <h1 className="text-white-800 text-xl font-semibold">
