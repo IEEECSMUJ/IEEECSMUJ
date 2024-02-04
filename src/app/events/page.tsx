@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { AppProgressBar as ProgressBar } from "next-nprogress-bar";
 import Link from "next/link";
-import eventsData, { Event } from "~/app/data/eventdata";
+import eventsData from "~/app/data/eventdata";
 
 
 export default function Page() {
