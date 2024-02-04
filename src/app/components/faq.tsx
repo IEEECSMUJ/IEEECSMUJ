@@ -76,6 +76,10 @@ const AccordionItem = ({header, text}) => {
                 <button
                     className={`faq-btn flex w-full text-left`}
                     onClick={() => handleToggle()}
+                    style={{
+                        userSelect: 'none', // Disable text selection
+                        WebkitTapHighlightColor: 'transparent', // Disable tap highlighting on iOS
+                    }}
                 >
                     <div className="w-full">
                         <h4 className="lg:text-lg text-base font-semibold text-ieeeyellow">{header}</h4>
