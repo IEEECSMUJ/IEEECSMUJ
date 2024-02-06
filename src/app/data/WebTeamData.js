@@ -22,6 +22,17 @@ const WebTeamData = [
         instagramURL: "https://instagram.com/wtfrishiiiii?igshid=ZDc4ODBmNjlmNQ==",
     },
     {
+        name: "Pujan Modha",
+        imageURL: "https://images.prismic.io/ieeemuj/3dda7e22-a017-4f7d-bffd-e31d75981173_pujan+modha.JPG",
+        position: "Webmaster",
+        hasLinkedIn: true,
+        linkedInURL: "https://www.linkedin.com/in/pujan-modha/",
+        hasGitHub: true,
+        gitHubURL: "https://www.github.com/pujan-modha/",
+        hasInstagram: true,
+        instagramURL: "https://www.twitter.com/pujan_modha/",
+    },
+    {
         name: "Aryan Jain",
         imageURL: "https://images.prismic.io/ieeemuj/7901c060-a97e-48fe-9c02-f867c207dcfc_WhatsApp+Image+2023-08-13+at+17.50.19.jpg",
         position: "Joint Head of Media",
