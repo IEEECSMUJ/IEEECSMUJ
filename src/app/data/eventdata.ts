@@ -93,7 +93,7 @@ interface Event {
     {
       id: 15,
       title: "Epiphany 2.0",
-      description: "24-hour ideathon at MUJ, presenting business models to judges like Ram Sharma and Aman Virmani. Open to all.",
+      description: "Break the boring, ignite creativity! 💡🧠 Join on 10-11 Feb, 10 am at 307, AB-1. Rs. 10K prize. Free entry! 🚀 ",
       imageUrl: "https://images.prismic.io/ieeemuj/31c144b8-a992-482d-aa53-26bbe9249d36_WhatsApp+Image+2024-02-06+at+18.29.19.jpeg?auto=compress,format", 
     },
   
