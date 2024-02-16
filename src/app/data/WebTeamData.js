@@ -1,8 +1,19 @@
 const WebTeamData = [
     {
+        name: "Dev Agrawal",
+        imageURL: "https://images.prismic.io/ieeemuj/29ff6235-c35d-4a13-b828-9d01c9893e6b_Dev+Agrawal.jpg",
+        position: "Project Leader",
+        hasLinkedIn: true,
+        linkedInURL: "https://www.linkedin.com/in/dev-agrawal28",
+        hasGitHub: true,
+        gitHubURL: "https://github.com/devagra28",
+        hasInstagram: true,
+        instagramURL: "https://instagram.com/dev_agrawal28",
+    },
+    {
         name: "Arunabha Mukhopadhyay",
         imageURL: "https://images.prismic.io/ieeemuj/2b3d4e23-0726-4b4b-9461-b6b3b9f54261_WhatsApp+Image+2023-08-13+at+18.00.32.jpg",
-        position: "Senior Coordinator (Programs)",
+        position: "Web Developer",
         hasLinkedIn: true,
         linkedInURL: "https://www.linkedin.com/in/arunabha-mukhopadhyay/",
         hasGitHub: true,
@@ -13,7 +24,7 @@ const WebTeamData = [
     {
         name: "Rishi Joshi",
         imageURL: "https://images.prismic.io/ieeemuj/d6afed2e-b0ba-484a-a625-6ce8d905d957_rishipic.webp?auto=compress,format",
-        position: "Senior Coordinator Technical Projects",
+        position: "Web Developer",
         hasLinkedIn: true,
         linkedInURL: "https://www.linkedin.com/in/rishi-joshi-924882200",
         hasGitHub: true,
@@ -24,7 +35,7 @@ const WebTeamData = [
     {
         name: "Pujan Modha",
         imageURL: "https://images.prismic.io/ieeemuj/3dda7e22-a017-4f7d-bffd-e31d75981173_pujan+modha.JPG",
-        position: "Webmaster",
+        position: "Web Developer",
         hasLinkedIn: true,
         linkedInURL: "https://www.linkedin.com/in/pujan-modha/",
         hasGitHub: true,
@@ -35,7 +46,7 @@ const WebTeamData = [
     {
         name: "Aryan Jain",
         imageURL: "https://images.prismic.io/ieeemuj/7901c060-a97e-48fe-9c02-f867c207dcfc_WhatsApp+Image+2023-08-13+at+17.50.19.jpg",
-        position: "Joint Head of Media",
+        position: "Graphics Designer",
         hasLinkedIn: true,
         linkedInURL: "https://www.linkedin.com/in/aryan-jain-2722b6255/",
         hasGitHub: false,
@@ -43,8 +54,17 @@ const WebTeamData = [
         hasInstagram: true,
         instagramURL: "https://instagram.com/aryan.j/",
     },
-
-   
+    {
+        name: "Abhinav Mondal",
+        imageURL: "https://www.shutterstock.com/image-vector/user-profile-icon-vector-avatar-600nw-2220431045.jpg",
+        position: "Web Developer",
+        hasLinkedIn: false,
+        linkedInURL: "",
+        hasGitHub: false,
+        gitHubURL: "",
+        hasInstagram: false,
+        instagramURL: "",
+    },
 ]
 
 export default WebTeamData;
