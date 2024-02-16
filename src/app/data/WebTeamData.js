@@ -45,7 +45,7 @@ const WebTeamData = [
     },
     {
         name: "Aryan Jain",
-        imageURL: "https://images.prismic.io/ieeemuj/7901c060-a97e-48fe-9c02-f867c207dcfc_WhatsApp+Image+2023-08-13+at+17.50.19.jpg",
+        imageURL: "https://images.prismic.io/ieeemuj/65c21e40615e73009ec4545b_AryanJain.jpg",
         position: "Graphics Designer",
         hasLinkedIn: true,
         linkedInURL: "https://www.linkedin.com/in/aryan-jain-2722b6255/",
