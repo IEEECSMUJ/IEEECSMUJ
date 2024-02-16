@@ -12,8 +12,8 @@ export default function Page() {
  
   const displayedEvents =
     activeTab === "COMPLETED"
-      ? eventsData.filter((event) => event.id >= 1 && event.id <= 14)
-      : eventsData.filter((event) => event.id > 14);
+      ? eventsData.filter((event) => event.id >= 1 && event.id <= 15)
+      : eventsData.filter((event) => event.id > 15);
 
       const handleRegisterClick = () => {
        
@@ -75,7 +75,7 @@ export default function Page() {
               <p className="text-white-600 mt-2 text-sm">
                 {event.description}
               </p>
-              {event.id === 15 ? (
+              {event.id === 16 ? (
                 <div
                   onClick={() => handleRegisterClick()}
                   className="mt-4 block rounded-full bg-[#FFA300] px-4 py-2 font-semibold text-white transition duration-300 hover:bg-yellow-700 cursor-pointer"
