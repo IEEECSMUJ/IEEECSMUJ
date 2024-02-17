@@ -11,7 +11,7 @@ export default function Page() {
 
  
   const displayedEvents =
-    activeTab === "COMPLETED"
+    activeTab === "UPCOMING"
       ? eventsData.filter((event) => event.id >= 1 && event.id <= 15)
       : eventsData.filter((event) => event.id > 15);
 
