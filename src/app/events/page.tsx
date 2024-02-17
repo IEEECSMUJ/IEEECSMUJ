@@ -46,13 +46,13 @@ export default function Page() {
               className={`mr-4 text-white ${activeTab === "UPCOMING" ? "border-b-2 border-green-500" : ""}`}
               onClick={() => setActiveTab("UPCOMING")}
             >
-              UPCOMING
+              COMPLETED
             </button>
             <button
               className={`mr-4 text-white ${activeTab === "COMPLETED" ? "border-b-2 border-gray-500" : ""}`}
               onClick={() => setActiveTab("COMPLETED")}
             >
-              COMPLETED
+              UPCOMING
             </button>
           </div>
 
