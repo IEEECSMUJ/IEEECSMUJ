@@ -97,5 +97,12 @@ interface Event {
       imageUrl: "https://images.prismic.io/ieeemuj/31c144b8-a992-482d-aa53-26bbe9249d36_WhatsApp+Image+2024-02-06+at+18.29.19.jpeg?auto=compress,format", 
     },
   
+    {
+      id: 16,
+      title: "En-Code",
+      description: "IEEE CS MUJ X Oneiros presents <en-Code>, a coding battle with a 10K prize pool! 🚀 Sharpen your algorithms and conquer for a chance to win big! 💸",
+      imageUrl: "https://images.prismic.io/ieeemuj/049efa5c-d213-4904-9da9-2b476fad8dbe_ENCODE+final.png?auto=compress,format", 
+    },
+  
   ];
   export default eventsData;

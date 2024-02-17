@@ -17,7 +17,7 @@ export default function Page() {
 
       const handleRegisterClick = () => {
        
-        window.location.href = "https://forms.gle/H588NBogT49rv2Lx8"; 
+        window.location.href = "https://forms.gle/UrpWtYtHV1HygMA77"; 
       };
 
   return (
