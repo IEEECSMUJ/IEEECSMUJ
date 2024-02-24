@@ -75,7 +75,7 @@ export default function Page() {
               <p className="text-white-600 mt-2 text-sm">
                 {event.description}
               </p>
-              {event.id === 16 ? (
+              {event.id === 17 ? (
                 <div
                   onClick={() => handleRegisterClick()}
                   className="mt-4 block rounded-full bg-[#FFA300] px-4 py-2 font-semibold text-white transition duration-300 hover:bg-yellow-700 cursor-pointer"
