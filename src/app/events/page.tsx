@@ -12,8 +12,8 @@ export default function Page() {
  
   const displayedEvents =
     activeTab === "UPCOMING"
-      ? eventsData.filter((event) => event.id >= 1 && event.id <= 15)
-      : eventsData.filter((event) => event.id > 15);
+      ? eventsData.filter((event) => event.id >= 1 && event.id <= 16)
+      : eventsData.filter((event) => event.id > 16);
 
       const handleRegisterClick = () => {
        
