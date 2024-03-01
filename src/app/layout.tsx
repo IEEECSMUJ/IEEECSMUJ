@@ -56,10 +56,11 @@ export default function RootLayout({
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
                     __html: JSON.stringify({
-                        '@context': 'https://schema.org',
-                        '@type': 'Organization',
-                        name: 'IEEE CS MUJ',
-                        url: 'https://cs.ieeemuj.com',
+                        "@context": "https://schema.org",
+                        "@type": "Organization",
+                        "name": "IEEE CS MUJ",
+                        "description": "${description}",
+                        "url": "https://cs.ieeemuj.com",
                         // Add more structured data properties here
                     }),
                 }}
