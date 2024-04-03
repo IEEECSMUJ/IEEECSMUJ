@@ -103,6 +103,14 @@ interface Event {
       description: "IEEE CS MUJ X Oneiros presents <en-Code>, a coding battle with a 10K prize pool! 🚀 Sharpen your algorithms and conquer for a chance to win big! 💸",
       imageUrl: "https://images.prismic.io/ieeemuj/049efa5c-d213-4904-9da9-2b476fad8dbe_ENCODE+final.png?auto=compress,format", 
     },
+
+    {
+      id: 17,
+      title: "HackerzStreet 2.0",
+      description: "Gear up for an adrenaline-fueled 24-hour coding marathon at Hackerzstreet 2.0, the ultimate tech showdown.🔥",
+      imageUrl: "https://images.prismic.io/ieeemuj/Zg0-j8t2UUcvBWwc_for-print-low-res.png?auto=format,compress", 
+    },
+    
   
   ];
   export default eventsData;
