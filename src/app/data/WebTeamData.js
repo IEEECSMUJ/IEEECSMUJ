@@ -52,7 +52,7 @@ const WebTeamData = [
         hasGitHub: false,
         gitHubURL: "",
         hasInstagram: true,
-        instagramURL: "https://instagram.com/aryan.j/",
+        instagramURL: "https://instagram.com/_aryan.j_/",
     },
     {
         name: "Abhinav Mondal",
