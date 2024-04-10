@@ -9,15 +9,15 @@ import eventsData from "~/app/data/eventdata";
 export default function Page() {
   const [activeTab, setActiveTab] = useState<string>("COMPLETED");
 
- 
+  eventsData.sort((a, b) => b.id - a.id);
   const displayedEvents =
     activeTab === "UPCOMING"
-      ? eventsData.filter((event) => event.id >= 1 && event.id <= 16)
-      : eventsData.filter((event) => event.id > 16);
+      ? eventsData.filter((event) => event.id >= 1 && event.id <= 17)
+      : eventsData.filter((event) => event.id > 17);
 
       const handleRegisterClick = () => {
        
-        window.location.href = "https://forms.gle/iEaNGxkNnmxGAzh78"; 
+        window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSd597Yn1BxcecJUMHOom5x6-_XV0aRI6AEvdYNPjrNF2YQYcQ/viewform";
       };
 
   return (
@@ -75,7 +75,7 @@ export default function Page() {
               <p className="text-white-600 mt-2 text-sm">
                 {event.description}
               </p>
-              {event.id === 17 ? (
+              {event.id === 18 ? (
                 <div
                   onClick={() => handleRegisterClick()}
                   className="mt-4 block rounded-full bg-[#FFA300] px-4 py-2 font-semibold text-white transition duration-300 hover:bg-yellow-700 cursor-pointer"
