@@ -10,7 +10,7 @@ interface Event {
       id: 1,
       title: "MockUp 3.0",
       description: "A 24-hour Nationwide UI/UX Design Challenge, offering free registration and cash prizes of up to Rs. 10,000 for participants.",
-      imageUrl: "https://images.prismic.io/ieeemuj/302689aa-c11e-4797-8fb7-54521454c68d_MOCKUP-3.0-FINAL-POSTER.png?auto=compress,format", 
+      imageUrl: "https://images.prismic.io/ieeemuj/302689aa-c11e-4797-8fb7-54521454c68d_MOCKUP-3.0-FINAL-POSTER.png?auto=compress,format",
     },
     {
       id: 2,
@@ -109,6 +109,12 @@ interface Event {
       title: "HackerzStreet 2.0",
       description: "Gear up for an adrenaline-fueled 24-hour coding marathon at Hackerzstreet 2.0, the ultimate tech showdown.🔥",
       imageUrl: "https://images.prismic.io/ieeemuj/Zg0-j8t2UUcvBWwc_for-print-low-res.png?auto=format,compress", 
+    },
+    {
+      id: 18,
+      title: "Weakest Link",
+      description: "Answer trivia, strategize with your team, but beware: one wrong move could spell doom. 🪄",
+      imageUrl: "https://images.prismic.io/ieeemuj/ZhabUDjCgu4jzuoM_weakest_link_poster.png?auto=format,compress",
     },
     
   
