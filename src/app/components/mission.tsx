@@ -29,12 +29,12 @@ const Mission = () => {
                     <div
                         className="flex bg-[#292929] bg-opacity-30 backdrop-blur-0 shadow flex-wrap gap-12 px-4 lg:px-8 justify-around mx-auto border-ieeeyellow  rounded-lg text-center py-8 my-8 max-w-7xl">
                         <div className="">
-                            <p className="text-ieeeyellow font-bold text-xl lg:text-2xl"><CountUp end={1000}
+                            <p className="text-ieeeyellow font-bold text-xl lg:text-2xl"><CountUp end={1500}
                                                                                                   duration={10}/>+</p>
                             <p className="g:text-2xl text-xl text-white font-bold">Members</p>
                         </div>
                         <div className="">
-                            <p className="text-ieeeyellow font-bold text-xl lg:text-2xl"><CountUp end={100}
+                            <p className="text-ieeeyellow font-bold text-xl lg:text-2xl"><CountUp end={20}
                                                                                                   duration={15}/>+</p>
                             <p className="g:text-2xl text-xl text-white font-bold">Events</p>
                         </div>
