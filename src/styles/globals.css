@@ -35,6 +35,10 @@ html.lenis {
     background-color: #000000;
 }
 
+::selection {
+    background: #FFA300;
+}
+
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: #FFA300;
