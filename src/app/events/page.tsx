@@ -12,11 +12,11 @@ export default function Page() {
   eventsData.sort((a, b) => b.id - a.id);
   const displayedEvents =
     activeTab === "UPCOMING"
-      ? eventsData.filter((event) => event.id >= 1 && event.id <= 17)
-      : eventsData.filter((event) => event.id > 17);
+      ? eventsData.filter((event) => event.completed)
+      : eventsData.filter((event) => !event.completed);
 
       const handleRegisterClick = () => {
-       
+
         window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSd597Yn1BxcecJUMHOom5x6-_XV0aRI6AEvdYNPjrNF2YQYcQ/viewform";
       };
 
