@@ -55,6 +55,17 @@ const WebTeamData = [
         instagramURL: "https://instagram.com/_aryan.j_/",
     },
     {
+        name: "Samaksh Gupta",
+        imageURL: "https://images.prismic.io/ieeemuj/ZnHHCpm069VX12xb_IMG-20240405-WA0024~2-SamakshGupta.jpg?auto=format,compress",
+        position: "Web Developer",
+        hasLinkedIn: true,
+        linkedInURL: "https://www.linkedin.com/in/samakshgupta04",
+        hasGitHub: true,
+        gitHubURL: "https://github.com/AwesomeSam9523/",
+        hasInstagram: true,
+        instagramURL: "https://www.instagram.com/samaksh.gupta04?igsh=c252dTcwNjZldWRp",
+    },
+    {
         name: "Abhinav Mondal",
         imageURL: "https://www.shutterstock.com/image-vector/user-profile-icon-vector-avatar-600nw-2220431045.jpg",
         position: "Web Developer",
