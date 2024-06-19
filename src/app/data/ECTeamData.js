@@ -32,7 +32,7 @@ const ECTeamData = [
     instagramURL: "https://www.instagram.com/mojitowithice/",
   }, {
     name: "Harshneet Khanna",
-    imageURL: "https://images.prismic.io/ieeemuj/a7c700b6-2bad-4977-bbc5-8b8f701de81e_WhatsApp+Image+2023-08-13+at+17.57.17.jpg",
+    imageURL: "https://images.prismic.io/ieeemuj/ZnHa-Zm069VX125x_WhatsAppImage2024-06-19at00.36.57_762311f2.jpg?auto=format,compress",
     position: "Managing Director",
     hasLinkedIn: true,
     linkedInURL: "https://www.linkedin.com/in/harshneet-khanna-031505236",

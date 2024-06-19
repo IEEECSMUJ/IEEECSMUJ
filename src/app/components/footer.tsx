@@ -1,7 +1,5 @@
 "use client"
 
-import {Montserrat} from "next/font/google";
-import { JetBrains_Mono } from "next/font/google";
 import Image from "next/image";
 import logo from "../assets/ieee-logo-white.svg";
 import React from "react";
@@ -67,12 +65,12 @@ export default function Footer() {
                            <p className="text-xl font-semibold pb-2">Contact Us</p>
                            <div className="text-base flex flex-col gap-3">
                                <ul>
-                                   <li><Link href="tel:+919721490618">+91 89202 87032</Link></li>
-                                   <li>Yuvraj Vasudeva</li>
+                                   <li><Link href="tel:+919721490618">+91 95699 13103</Link></li>
+                                   <li>Rishi Joshi</li>
                                </ul>
                                <ul>
-                                   <li><Link href="tel:+919569516125">+91 94275 96868</Link></li>
-                                   <li>Dev Agrawal</li>
+                                   <li><Link href="tel:+919569516125">+91 99995 58266</Link></li>
+                                   <li>Pranav Bhardwaj</li>
                                </ul>
                            </div>
                        </div>
