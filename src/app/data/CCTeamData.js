@@ -386,7 +386,7 @@ const CCTeamData = [
   },
   {
     name: "Samarth Ruia",
-    imageURL: "https://www.shutterstock.com/image-vector/user-profile-icon-vector-avatar-600nw-2220431045.jpg",
+    imageURL: "https://images.prismic.io/ieeemuj/ZnLo8Zm069VX14yr_WhatsAppImage2024-06-19at18.25.12_4a0c0fbc.jpg?auto=format,compress",
     position: "Joint Head of Curations",
     hasLinkedIn: false,
     linkedInURL: "",
