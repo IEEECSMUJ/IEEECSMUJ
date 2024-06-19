@@ -56,7 +56,7 @@ const CCTeamData = [
   },
   {
     name: "Bhavya Jaggi",
-    imageURL: "https://images.prismic.io/ieeemuj/ZnHF5pm069VX12w__IMG-20240616-WA0008-BhavyaJaggi.jpg?auto=format,compress",
+    imageURL: "https://images.prismic.io/ieeemuj/ZnJi7Jm069VX13Sw_WhatsAppImage2024-06-19at01.11.15_d1c48614.jpg?auto=format,compress",
     position: "Senior Coordinator of Programs",
     hasLinkedIn: false,
     linkedInURL: "",
@@ -100,7 +100,7 @@ const CCTeamData = [
   },
   {
     name: "Samaksh Gupta",
-    imageURL: "https://images.prismic.io/ieeemuj/ZnHHCpm069VX12xb_IMG-20240405-WA0024~2-SamakshGupta.jpg?auto=format,compress",
+    imageURL: "https://images.prismic.io/ieeemuj/ZnJjw5m069VX13S1_IMG-20240405-WA0024~2-SamakshGupta.jpg?auto=format,compress",
     position: "Head of Technical Projects",
     hasLinkedIn: true,
     linkedInURL: "https://www.linkedin.com/in/samakshgupta04",
@@ -177,7 +177,7 @@ const CCTeamData = [
   },
   {
     name: "Gauri Goyal",
-    imageURL: "https://images.prismic.io/ieeemuj/ZnHKbJm069VX12yW_IMG_20240613_012402-transformed-GAURIGOYAL.jpeg?auto=format,compress",
+    imageURL: "https://images.prismic.io/ieeemuj/ZnJjKJm069VX13Sy_WhatsAppImage2024-06-19at02.43.18_efac9c58.jpg?auto=format,compress",
     position: "Senior Coordinator of Graphic Design",
     hasLinkedIn: false,
     linkedInURL: "",
@@ -518,7 +518,7 @@ const CCTeamData = [
   },
   {
     name: "Khushboo Aggarwal",
-    imageURL: "https://images.prismic.io/ieeemuj/ZnHS_5m069VX122b_IMG_7870-Khushboo.jpeg?auto=format,compress",
+    imageURL: "https://images.prismic.io/ieeemuj/ZnHY_5m069VX125P_IMG_6360.HEIC?auto=format,compress",
     position: "Head of Social Media",
     hasLinkedIn: false,
     linkedInURL: "",
@@ -529,7 +529,7 @@ const CCTeamData = [
   },
   {
     name: "Aryan Goyal",
-    imageURL: "https://images.prismic.io/ieeemuj/ZnHTa5m069VX123B_IMG_6772-AryanGoyal.jpeg?auto=format,compress",
+    imageURL: "https://images.prismic.io/ieeemuj/ZnJjCZm069VX13Sx_WhatsAppImage2024-06-19at02.42.56_e2592b28.jpg?auto=format,compress",
     position: "Joint Head of Social Media",
     hasLinkedIn: false,
     linkedInURL: "",
@@ -562,7 +562,7 @@ const CCTeamData = [
   },
   {
     name: "Vinayak Jajoo",
-    imageURL: "https://images.prismic.io/ieeemuj/ZnHUzpm069VX123n_IMG_6445-VinayakJajoo.jpeg?auto=format,compress",
+    imageURL: "https://images.prismic.io/ieeemuj/ZnJjR5m069VX13Sz_IMG_6445.HEIC?auto=format,compress",
     position: "Head of Coverage",
     hasLinkedIn: false,
     linkedInURL: "",
@@ -639,7 +639,7 @@ const CCTeamData = [
   },
   {
     name: "Reetikesh Choudhury",
-    imageURL: "https://images.prismic.io/ieeemuj/ZnHWA5m069VX124M_IMG_20240616_173348-ReetikeshChoudhury.jpg?auto=format,compress",
+    imageURL: "https://images.prismic.io/ieeemuj/ZnJi0Jm069VX13Su_WhatsAppImage2024-06-19at00.57.08_713e498f.jpg?auto=format,compress",
     position: "Senior Coordinator of Community",
     hasLinkedIn: false,
     linkedInURL: "",
