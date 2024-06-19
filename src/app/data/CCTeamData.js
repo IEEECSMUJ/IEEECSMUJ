@@ -111,7 +111,7 @@ const CCTeamData = [
   },
   {
     name: "Krishnav Kanoi",
-    imageURL: "https://images.prismic.io/ieeemuj/ZnHI1pm069VX12xs_WhatsAppImage2024-06-17at15.31.45_1a3e0dae-AwesomeSam.jpg?auto=format,compress",
+    imageURL: "https://images.prismic.io/ieeemuj/ZnJu6Zm069VX13Uv_WhatsAppImage2024-06-19at00.43.32_c5367913.jpg?auto=format,compress",
     position: "Joint Head of Technical Projects",
     hasLinkedIn: false,
     linkedInURL: "",
