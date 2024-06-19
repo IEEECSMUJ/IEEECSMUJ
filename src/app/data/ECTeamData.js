@@ -64,7 +64,7 @@ const ECTeamData = [
   },
   {
     name: "Naad Dantale",
-    imageURL: "https://images.prismic.io/ieeemuj/395176fe-a695-4a6a-90f3-afe49d2db4dc_pic.jpeg",
+    imageURL: "https://images.prismic.io/ieeemuj/ZnJujpm069VX13Us_WhatsAppImage2024-06-19at10.58.58_c139107e.jpg?auto=format,compress",
     position: "Technical Secretary",
     hasLinkedIn: true,
     linkedInURL: "https://www.linkedin.com/in/naaddantale",
