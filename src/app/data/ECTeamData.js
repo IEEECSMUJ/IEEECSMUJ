@@ -22,7 +22,7 @@ const ECTeamData = [
     instagramURL: "https://instagram.com/pranav._.02?igshid=MzNlNGNkZWQ4Mg==",
   }, {
     name: "Mohit Hingorani",
-    imageURL: "https://images.prismic.io/ieeemuj/8add325c-46f6-4bcd-b57d-51bc1dd7aff2_Mohit+Hingorani+-+Mohit.jpg",
+    imageURL: "https://images.prismic.io/ieeemuj/ZnPxv5m069VX16JG_1000005233-02.jpeg.jpg?auto=format,compress",
     position: "General Secretary",
     hasLinkedIn: true,
     linkedInURL: "https://www.linkedin.com/in/mohit-hingorani-439265248/",
