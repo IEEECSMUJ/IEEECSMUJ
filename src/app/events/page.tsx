@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { AppProgressBar as ProgressBar } from "next-nprogress-bar";
 import Link from "next/link";
 import eventsData from "~/app/data/eventdata";
+import Image from "next/image";
 
 
 export default function Page() {
@@ -15,9 +16,8 @@ export default function Page() {
       ? eventsData.filter((event) => event.completed)
       : eventsData.filter((event) => !event.completed);
 
-      const handleRegisterClick = () => {
-
-        window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSd597Yn1BxcecJUMHOom5x6-_XV0aRI6AEvdYNPjrNF2YQYcQ/viewform";
+      const handleRegisterClick = (url: string) => {
+        window.location.href = url;
       };
 
   return (
@@ -40,7 +40,7 @@ export default function Page() {
 
           {/* Tabs */}
           <div
-            className={`mb-4 flex ${window.innerWidth < 640 ? "mt-10" : ""}`}
+            className={`mb-4 flex sm:mt-10`}
           >
             <button
               className={`mr-4 text-white ${activeTab === "UPCOMING" ? "border-b-2 border-green-500" : ""}`}
@@ -63,9 +63,11 @@ export default function Page() {
             key={event.id}
             className="overflow-hidden rounded-lg bg-black shadow-lg w-full"
           >
-            <img
+            <Image
               src={event.imageUrl}
               alt={event.title}
+              width={500}
+              height={500}
               className="h-64 w-full object-cover sm:h-80 lg:h-96"
             />
             <div className="p-4">
@@ -75,9 +77,9 @@ export default function Page() {
               <p className="text-white-600 mt-2 text-sm">
                 {event.description}
               </p>
-              {event.id === 18 ? (
+              {!event.completed ? (
                 <div
-                  onClick={() => handleRegisterClick()}
+                  onClick={() => handleRegisterClick(event.registerUrl)}
                   className="mt-4 block rounded-full bg-[#FFA300] px-4 py-2 font-semibold text-white transition duration-300 hover:bg-yellow-700 cursor-pointer"
                 >
                   Register
