@@ -157,7 +157,7 @@ const eventsData: Event[] = [
     title: "F1nalyze",
     description: "Gear up for a high-speed, data-driven adventure at the ultimate 24 hour datathon, F1nalyze! 🏎",
     imageUrl: "https://images.prismic.io/ieeemuj/ZnVFFZm069VX18ao_WhatsAppImage2024-06-20at14.37.44_b7e57d81.jpg?auto=format,compress",
-    completed: false,
+    completed: true,
     registerUrl: "https://forms.gle/XeLsi8wWwVxKL3Q48"
   },
 
