@@ -61,22 +61,25 @@ export default function Page() {
         {displayedEvents.map((event) => (
           <div
             key={event.id}
-            className="overflow-hidden rounded-lg bg-black shadow-lg w-full"
+            className="overflow-hidden rounded-lg bg-black shadow-lg w-full h-[40rem]"
           >
             <Image
               src={event.imageUrl}
               alt={event.title}
               width={500}
               height={500}
-              className="h-64 w-full object-cover sm:h-80 lg:h-96"
+              className="h-64 w-full object-contain sm:h-80 lg:h-96"
             />
-            <div className="p-4">
-              <h1 className="text-white-800 text-xl font-semibold">
-                {event.title}
-              </h1>
-              <p className="text-white-600 mt-2 text-sm">
-                {event.description}
-              </p>
+            <div className="p-4 flex flex-col justify-between h-[30%]">
+              <div className="flex flex-col">
+                <h1 className="text-white-800 text-xl font-semibold">
+                  {event.title}
+                </h1>
+                <p className="text-white-600 mt-2 text-sm">
+                  {event.description}
+                </p>
+              </div>
+
               {!event.completed ? (
                 <div
                   onClick={() => handleRegisterClick(event.registerUrl)}
