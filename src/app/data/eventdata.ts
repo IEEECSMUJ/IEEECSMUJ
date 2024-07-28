@@ -160,7 +160,14 @@ const eventsData: Event[] = [
     completed: true,
     registerUrl: "https://forms.gle/XeLsi8wWwVxKL3Q48"
   },
-
+  {
+    id: 20,
+    title: "Breaking Bug",
+    description: "An exciting challenge where even the tiniest bugs can be game changers, and hold up! Is that an secret trove of easter bugs? 🐞",
+    imageUrl: "https://images.prismic.io/ieeemuj/ZqYJpR5LeNNTxizl_WhatsAppImage2024-07-27at19.22.16_b55b37b0.jpg?auto=format,compress",
+    completed: false,
+    registerUrl: "https://forms.gle/8ro7gESQssspxN2T8"
+  }
 
 ];
 export default eventsData;
