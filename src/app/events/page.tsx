@@ -32,8 +32,8 @@ export default function Page() {
         <div className="mx-[5vw] mt-4 flex min-h-screen max-w-7xl flex-col items-center justify-center lg:mx-[10vw] xl:mx-auto">
           {/* Heading and Subheading */}
           <div className="mb-4 h-24 w-full rounded-lg bg-transparent p-4 text-center text-white">
-            <h1 className="text-6xl font-bold text-ieeeyellow">Events</h1>
-            <p className="text-3xl text-ieeeyellow">
+            <h1 className="lg:text-6xl text-3xl font-bold text-ieeeyellow">Events</h1>
+            <p className="lg:text-3xl text-xl text-ieeeyellow">
               Discover our upcoming events
             </p>
           </div>
