@@ -12,7 +12,7 @@ const ECTeamData = [
   },
   {
     name: "Pranav Bhardwaj",
-    imageURL: "https://images.prismic.io/ieeemuj/f13b0974-cddb-4d7a-8322-4e54f7372a46_image+for+genesis+-+Pranav+Bhardwaj.jpg",
+    imageURL: "https://images.prismic.io/ieeemuj/ZqoHjh5LeNNTxpJj_pranavbhaiya.png?auto=format,compress",
     position: "Vice Chairperson",
     hasLinkedIn: true,
     linkedInURL: "https://www.linkedin.com/in/pranav-bhardwaj-107454206",
