@@ -407,17 +407,6 @@ const CCTeamData = [
     instagramURL: "",
   },
   {
-    name: "Mritunjay Singh",
-    imageURL: "https://images.prismic.io/ieeemuj/ZnHP_5m069VX120v_Screenshot_2024-06-17-10-16-04-93_6012fa4d4ddec268fc5c7112cbb265e7-SangyaSingh.jpg?auto=format,compress",
-    position: "Senior Coordinator of Curations",
-    hasLinkedIn: false,
-    linkedInURL: "",
-    hasGitHub: false,
-    gitHubURL: "",
-    hasInstagram: false,
-    instagramURL: "",
-  },
-  {
     name: "Parth Bajaj",
     imageURL: "https://images.prismic.io/ieeemuj/ZnHQMZm069VX1205_profilePic1crop-ParthBajaj.jpg?auto=format,compress",
     position: "Senior Coordinator of Curations",
