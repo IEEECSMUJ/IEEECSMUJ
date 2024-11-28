@@ -167,6 +167,14 @@ const eventsData: Event[] = [
     imageUrl: "https://images.prismic.io/ieeemuj/ZqYJpR5LeNNTxizl_WhatsAppImage2024-07-27at19.22.16_b55b37b0.jpg?auto=format,compress",
     completed: true,
     registerUrl: "https://forms.gle/8ro7gESQssspxN2T8"
+  },
+  {
+    id: 21,
+    title: "Git it Done",
+    description: "A hands-on workshop and unlock the full power of GitHub- from mastering version control to nailing that GSoC 🎖",
+    imageUrl: "https://images.prismic.io/ieeemuj/Z0iy5JbqstJ974Kh_GITITDONEPOSTER.png?auto=format,compress",
+    completed: false,
+    registerUrl: "https://forms.gle/3ZgBNR3cWEfmgVsa9"
   }
 
 ];
