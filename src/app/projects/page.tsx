@@ -1,25 +1,11 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { AppProgressBar as ProgressBar } from "next-nprogress-bar";
-import Link from "next/link";
 import projectsData from "~/app/data/projectdata";
 import Image from "next/image";
 
-
 export default function Page() {
-//   const [activeTab, setActiveTab] = useState<string>("COMPLETED");
-
-//   projectsData.sort((a, b) => a.id - b.id);
-//   const displayedEvents =
-//     activeTab === "UPCOMING"
-//       ? projectsData.filter((event) => event.completed)
-//       : projectsData.filter((event) => !event.completed);
-
-    const handleRegisterClick = (url: string) => {
-    window.location.href = url;
-    };
-
   return (
     <>
       <ProgressBar
@@ -38,118 +24,86 @@ export default function Page() {
             </p>
           </div>
 
-          {/* Tabs */}
-          {/* <div
-            className={`mb-4 flex sm:mt-10`}
-          >
-            <button
-              className={`mr-4 text-white ${activeTab === "UPCOMING" ? "border-b-2 border-green-500" : ""}`}
-              onClick={() => setActiveTab("UPCOMING")}
-            >
-              COMPLETED
-            </button>
-            <button
-              className={`mr-4 text-white ${activeTab === "COMPLETED" ? "border-b-2 border-gray-500" : ""}`}
-              onClick={() => setActiveTab("COMPLETED")}
-            >
-              UPCOMING
-            </button>
-          </div> */}
-
           {/* Project Cards */}
           <div className="grid w-full grid-cols-1 gap-10 pb-8 pt-10 sm:grid-cols-2 md:grid-cols-3">
             {projectsData.map((event) => (
-                <div
+              <div
                 key={event.id}
                 className="overflow-hidden rounded-lg bg-black shadow-lg w-full"
-                >
-                    <div className="parent_div p-4 flex flex-row">
-                        <div className="child_div p-4 flex flex-col">
+              >
+                {/* Render only the section with content */}
+                <div className="sexy flex">
+                  {event.title_1 && (
+                    <div className="p-4 flex flex-col">
+                      {event.imageUrl_1 && (
+                        <Image
+                          src={event.imageUrl_1}
+                          alt={`${event.title_1} - Image 1`}
+                          width={500}
+                          height={300}
+                          className="w-full h-48 object-cover rounded-lg"
+                        />
+                      )}
+                      <h1 className="text-white text-xl font-semibold mb-2">
+                        {event.title_1}
+                      </h1>
+                      <p className="text-gray-300 text-sm mb-4">
+                        {event.description_1}
+                      </p>
+                    </div>
+                  )}
+                  <div className="parent gid grid-rows-2">
+                    <div className="sub_parent row-span-1">
+                      {event.title_2 && (
+                        <div className="child p-4 flex flex-row">
+                          {event.imageUrl_2 && (
+                            <Image
+                              src={event.imageUrl_2}
+                              alt={`${event.title_2} - Image 2`}
+                              width={500}
+                              height={300}
+                              className="w-full h-48 object-cover rounded-lg"
+                            />
+                          )}
+                          <div className="sub_child flex flex-col">
                             <h1 className="text-white text-xl font-semibold mb-2">
-                                {event.title_1}
+                              {event.title_2}
                             </h1>
                             <p className="text-gray-300 text-sm mb-4">
-                                {event.description_1}
+                              {event.description_2}
                             </p>
-                            {/* <div className="flex flex-col gap-4"> */}
-                            {[event.imageUrl_1].map(
-                                (url, idx) =>
-                                url && (
-                                    <Image
-                                    key={idx}
-                                    src={url}
-                                    alt={`${event.title_1} - Image ${idx + 1}`}
-                                    width={500}
-                                    height={300}
-                                    className="w-full h-48 object-cover rounded-lg"
-                                    />
-                                )
-                            )}
-                            {/* </div> */}
+                          </div>
                         </div>
-
-                        <div className="child_div p-4 flex flex-col">
-                            <div className="child_lvl-2_div p-4 flex flex-row">
-                                {[event.imageUrl_2].map(
-                                  (url, idx) =>
-                                  url && (
-                                      <Image
-                                      key={idx}
-                                      src={url}
-                                      alt={`${event.title_2} - Image ${idx + 1}`}
-                                      width={500}
-                                      height={300}
-                                      className="w-full h-48 object-cover rounded-lg"
-                                      />
-                                  )
-                                )}
-                                <div className="child_lvl-3_div flex flex-col gap-4">
-                                    <h1 className="text-white text-xl font-semibold mb-2">
-                                        {event.title_2}
-                                    </h1>
-                                    <p className="text-gray-300 text-sm mb-4">
-                                        {event.description_2}
-                                    </p>
-                                </div>
-
-                                {/* <div className="flex flex-col gap-4"> */}
-
-                                {/* </div> */}
-                            </div>
-                            <div className="child_lvl-2_div p-4 flex flex-row">
-                                {[event.imageUrl_3].map(
-                                  (url, idx) =>
-                                  url && (
-                                      <Image
-                                      key={idx}
-                                      src={url}
-                                      alt={`${event.title_3} - Image ${idx + 1}`}
-                                      width={500}
-                                      height={300}
-                                      className="w-full h-48 object-cover rounded-lg"
-                                      />
-                                  )
-                                )}
-                                <div className="child_lvl-3_div flex flex-col gap-4">
-                                    <h1 className="text-white text-xl font-semibold mb-2">
-                                        {event.title_3}
-                                    </h1>
-                                    <p className="text-gray-300 text-sm mb-4">
-                                        {event.description_3}
-                                    </p>
-                                </div>
-
-                                {/* <div className="flex flex-col gap-4"> */}
-
-                                {/* </div> */}
-                            </div>
-                        </div>
-
+                      )}
                     </div>
-                
+                    <div className="sub_parent row-span-1">
+                      {event.title_3 && (
+                        <div className="child p-4 flex flex-row">
+                          {event.imageUrl_3 && (
+                            <Image
+                              src={event.imageUrl_3}
+                              alt={`${event.title_3} - Image 3`}
+                              width={500}
+                              height={300}
+                              className="w-full h-48 object-cover rounded-lg"
+                            />
+                          )}
+                          <div className="sub_child flex flex-col">
+                            <h1 className="text-white text-xl font-semibold mb-2">
+                              {event.title_3}
+                            </h1>
+                            <p className="text-gray-300 text-sm mb-4">
+                              {event.description_3}
+                            </p>
+                          </div>
+                        </div>
+                      )}
+                    </div>  
+                  </div>
                 </div>
+              </div>
             ))}
-            </div>
+          </div>
         </div>
       </div>
     </>
