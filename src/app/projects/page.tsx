@@ -63,15 +63,15 @@ export default function Page() {
                 key={event.id}
                 className="overflow-hidden rounded-lg bg-black shadow-lg w-full"
                 >
-                    <div className="p-4 flex">
-                        <div className="p-4 flex flex-col">
+                    <div className="parent_div p-4 flex flex-row">
+                        <div className="child_div p-4 flex flex-col">
                             <h1 className="text-white text-xl font-semibold mb-2">
                                 {event.title_1}
                             </h1>
                             <p className="text-gray-300 text-sm mb-4">
                                 {event.description_1}
                             </p>
-                            <div className="flex flex-col gap-4">
+                            {/* <div className="flex flex-col gap-4"> */}
                             {[event.imageUrl_1].map(
                                 (url, idx) =>
                                 url && (
@@ -85,12 +85,25 @@ export default function Page() {
                                     />
                                 )
                             )}
-                            </div>
+                            {/* </div> */}
                         </div>
 
-                        <div className="p-4 flex flex-col">
-                            <div className="p-4 flex flex-row">
-                                <div className="flex flex-col gap-4">
+                        <div className="child_div p-4 flex flex-col">
+                            <div className="child_lvl-2_div p-4 flex flex-row">
+                                {[event.imageUrl_2].map(
+                                  (url, idx) =>
+                                  url && (
+                                      <Image
+                                      key={idx}
+                                      src={url}
+                                      alt={`${event.title_2} - Image ${idx + 1}`}
+                                      width={500}
+                                      height={300}
+                                      className="w-full h-48 object-cover rounded-lg"
+                                      />
+                                  )
+                                )}
+                                <div className="child_lvl-3_div flex flex-col gap-4">
                                     <h1 className="text-white text-xl font-semibold mb-2">
                                         {event.title_2}
                                     </h1>
@@ -100,23 +113,24 @@ export default function Page() {
                                 </div>
 
                                 {/* <div className="flex flex-col gap-4"> */}
-                                {[event.imageUrl_2].map(
-                                    (url, idx) =>
-                                    url && (
-                                        <Image
-                                        key={idx}
-                                        src={url}
-                                        alt={`${event.title_2} - Image ${idx + 1}`}
-                                        width={500}
-                                        height={300}
-                                        className="w-full h-48 object-cover rounded-lg"
-                                        />
-                                    )
-                                )}
+
                                 {/* </div> */}
                             </div>
-                            <div className="p-4 flex flex-row">
-                                <div className="flex flex-col gap-4">
+                            <div className="child_lvl-2_div p-4 flex flex-row">
+                                {[event.imageUrl_3].map(
+                                  (url, idx) =>
+                                  url && (
+                                      <Image
+                                      key={idx}
+                                      src={url}
+                                      alt={`${event.title_3} - Image ${idx + 1}`}
+                                      width={500}
+                                      height={300}
+                                      className="w-full h-48 object-cover rounded-lg"
+                                      />
+                                  )
+                                )}
+                                <div className="child_lvl-3_div flex flex-col gap-4">
                                     <h1 className="text-white text-xl font-semibold mb-2">
                                         {event.title_3}
                                     </h1>
@@ -126,19 +140,7 @@ export default function Page() {
                                 </div>
 
                                 {/* <div className="flex flex-col gap-4"> */}
-                                {[event.imageUrl_3].map(
-                                    (url, idx) =>
-                                    url && (
-                                        <Image
-                                        key={idx}
-                                        src={url}
-                                        alt={`${event.title_3} - Image ${idx + 1}`}
-                                        width={500}
-                                        height={300}
-                                        className="w-full h-48 object-cover rounded-lg"
-                                        />
-                                    )
-                                )}
+
                                 {/* </div> */}
                             </div>
                         </div>
