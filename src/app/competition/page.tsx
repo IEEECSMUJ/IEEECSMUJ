@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import { AppProgressBar as ProgressBar } from "next-nprogress-bar";
+import  AccoladesCard  from '../components/accoladesCard';
 
 // Define the props interface
 interface AccoladesCardProps {
@@ -15,96 +16,7 @@ interface AccoladesCardProps {
   id?: number;
 }
 
-const AccoladesCard: React.FC<AccoladesCardProps> = ({ 
-  hackathonName, 
-  description, 
-  photos, 
-  position, 
-  fullWidth, 
-  iconApp, 
-  buttonText, 
-  subtext 
-}) => {
-  const [expanded, setExpanded] = useState(false);
 
-  // Function to toggle expanded state
-  const toggleExpand = () => {
-    setExpanded(!expanded);
-  };
-
-  return (
-    <div 
-      className={`relative overflow-hidden rounded-xl ${fullWidth ? 'md:col-span-2' : ''}`}
-      style={{ gridColumn: `span ${fullWidth ? 2 : 1}` }}
-    >
-      <div className="relative h-64 w-full group">
-       
-        <img 
-          src={photos} 
-          alt={hackathonName} 
-          className="w-full h-full object-cover rounded-xl"
-        />
-
-       
-        <div className="absolute inset-0 bg-black bg-opacity-50 p-4 flex flex-col justify-between rounded-xl">
-          <div>
-            <h3 className="text-white font-bold text-xl">{hackathonName}</h3>
-            
-           
-            {!expanded && (
-              <p className="text-white mt-2 line-clamp-3">{description}</p>
-            )}
-          </div>
-
-          <div className="flex justify-between items-end">
-            {buttonText && (
-              <button className="bg-white text-black px-4 py-2 rounded-md font-medium">
-                {buttonText}
-              </button>
-            )}
-            
-            <button 
-              className="text-white underline opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              onClick={toggleExpand}
-            >
-              View More
-            </button>
-          </div>
-        </div>
-
-        {/* Expanded view with animations */}
-        <div 
-          className={`absolute inset-0 bg-black p-6 flex flex-col justify-between rounded-xl z-10 transition-all duration-500 ease-in-out ${
-            expanded 
-              ? 'opacity-90 translate-y-0' 
-              : 'opacity-0 translate-y-full pointer-events-none'
-          }`}
-        >
-          <div className={`transition-all duration-500 ease-in-out ${expanded ? 'opacity-100' : 'opacity-0'}`}>
-            <h3 className="text-white font-bold text-xl mb-4">{hackathonName}</h3>
-            <p className="text-white">{description}</p>
-            {subtext && <p className="text-white mt-4 italic">{subtext}</p>}
-          </div>
-          
-          <div className={`flex justify-between items-end transition-all duration-500 ease-in-out ${expanded ? 'opacity-100' : 'opacity-0'}`}>
-            {buttonText && (
-              <button className="bg-white text-black px-4 py-2 rounded-md font-medium">
-                {buttonText}
-              </button>
-            )}
-            
-            <button 
-              className="text-white underline"
-              onClick={toggleExpand}
-            >
-              View Less
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
 
 const accoladesData = [
   {
@@ -136,7 +48,6 @@ const accoladesData = [
     hackathonName: "NEW",
     description: "Introducing the Acme camera — redefining photography with ultra-clear lenses, enhanced low-light performance, and seamless connectivity. Available soon. Get notified.",
     subtext: "Available soon. Get notified.",
-    buttonText: "Notify Me",
     photos: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0",
     position: "4",
     fullWidth: false,
@@ -153,11 +64,9 @@ const accoladesData = [
     id: 5,
     hackathonName: "Breathing App",
     description: "Get a good night's sleep with guided breathing exercises, soothing soundscapes, and mindfulness activities tailored to reduce stress.",
-    buttonText: "Get App",
     photos: "https://images.unsplash.com/photo-1560807707-8cc77767d783",
     position: "2",
     fullWidth: false,
-    iconApp: true,
   },
   {
     id: 6,

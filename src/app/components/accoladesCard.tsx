@@ -1,94 +1,81 @@
 "use client";
-import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
-import Image from "next/image";
-import { Button } from "@heroui/react";
+import React, { useState } from 'react';
 
-export type AccoladesData = {
-  id: number;
+interface AccoladesCardProps {
   hackathonName: string;
   description: string;
-  extendedDescription?: string;
   photos: string;
   position: string;
-  fullWidth?: boolean;
-};
+  fullWidth: boolean;
+  iconApp?: boolean;
+  buttonText?: string;
+  subtext?: string;
+  id?: number;
+}
 
-const AccoladesCard = ({
-  id,
-  hackathonName,
-  description,
-  extendedDescription,
-  photos,
-  fullWidth,
-}: AccoladesData) => {
-  const [showMore, setShowMore] = useState(false);
+const AccoladesCard: React.FC<AccoladesCardProps> = ({ 
+  hackathonName, 
+  description, 
+  photos, 
+  position, 
+  fullWidth, 
+  iconApp, 
+  buttonText, 
+  subtext 
+}) => {
+  const [expanded, setExpanded] = useState(false);
+
+  const toggleExpand = () => setExpanded(!expanded);
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.1, ease: "easeOut" }}
-      whileHover={{
-        scale: showMore ? 1 : 1.04,
-      }}
-      className={`relative rounded-xl overflow-hidden shadow-lg transition-transform duration-500 ease-out ${
-        fullWidth ? "col-span-2" : ""
-      }`}
-      style={{
-        height: fullWidth ? "350px" : id === 3 ? "500px" : "300px",
-      }}
+    <div 
+      className={`relative overflow-hidden rounded-xl ${fullWidth ? 'md:col-span-2' : ''}`}
+      style={{ gridColumn: `span ${fullWidth ? 2 : 1}` }}
     >
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <Image
-          src={photos}
-          alt={hackathonName}
-          layout="fill"
-          objectFit="cover"
-          className="absolute inset-0 w-full h-full z-0 pointer-events-none"
+      <div className="relative h-64 w-full group">
+        {/* Background Image */}
+        <img 
+          src={photos} 
+          alt={`Photo of ${hackathonName}`} 
+          className="w-full h-full object-cover rounded-xl"
         />
-      </div>
 
-      {/* Bottom Content Section with Gradient Overlay */}
-      <div className="absolute bottom-0 w-full bg-gradient-to-t from-black/80 via-black/60 to-transparent p-4 z-10">
-        <h2 className="text-lg font-bold text-ieeeorange">{hackathonName}</h2>
-        <p className="text-sm text-white">{description.slice(0, 60)}...</p>
-
-        {extendedDescription?.trim() && (
-          <Button
-            onClick={() => setShowMore(true)}
-            className="bg-ieeeorange text-black px-3 py-1 rounded-full text-sm hover:bg-ieeeyellow mt-2"
-          >
-            View More
-          </Button>
-        )}
-      </div>
-
-     
-      <AnimatePresence>
-        {showMore && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="absolute inset-0 bg-black/90 z-20 p-5 flex flex-col justify-center items-center gap-4"
-          >
-            <h2 className="text-lg font-bold text-ieeeorange">{hackathonName}</h2>
-            <p className="text-sm text-ieeeyellow text-center max-w-[80%]">
-              {extendedDescription || description}
-            </p>
-            <Button
-              onClick={() => setShowMore(false)}
-              className="bg-ieeeorange text-black px-3 py-1 rounded-full text-sm hover:bg-ieeeyellow"
+        {/* Bottom Content Section */}
+        {!expanded && (
+          <div className="absolute bottom-0 w-full bg-gradient-to-t from-black/80 via-black/60 to-transparent p-4 rounded-xl z-10">
+            <h3 className="text-ieeeorange font-bold text-xl">{hackathonName}</h3>
+            <p className="text-white mt-2 text-sm">{description.slice(0, 60)}...</p>
+            <button 
+              className="text-white underline mt-2 hover:text-ieeeyellow"
+              onClick={toggleExpand}
+              aria-expanded={expanded}
             >
-              View Less
-            </Button>
-          </motion.div>
+              View More
+            </button>
+          </div>
         )}
-      </AnimatePresence>
-    </motion.div>
+
+        {/* Expanded Details (Center View) */}
+        <div 
+          className={`absolute inset-0 bg-black/90 p-6 flex flex-col justify-center items-center rounded-xl z-20 transition-all duration-500 ease-in-out ${
+            expanded 
+              ? 'opacity-100 translate-y-0 pointer-events-auto' 
+              : 'opacity-0 translate-y-full pointer-events-none'
+          }`}
+        >
+          <h3 className="text-[#FF8500] font-bold text-2xl mb-4 text-center">{hackathonName}</h3>
+          <p className="text-white text-center">{description}</p>
+          {subtext && <p className="text-white mt-4 italic">{subtext}</p>}
+
+          <button 
+            className="text-white underline mt-4 hover:text-ieeeyellow"
+            onClick={toggleExpand}
+          >
+            View Less
+          </button>
+        </div>
+      </div>
+    </div>
   );
 };
 
