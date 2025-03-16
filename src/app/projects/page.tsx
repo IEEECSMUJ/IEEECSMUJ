@@ -48,7 +48,7 @@ export default function Page() {
               >
                 <div className="parent_div p-4 flex flex-col">
 
-                  {/* Card 1  */}
+                  {/* Card 1.0  */}
                   {event.imageUrl_1 && (
                     <div className="child_div p-4 flex flex-col">
                       <Image
