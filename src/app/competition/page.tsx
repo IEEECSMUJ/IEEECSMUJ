@@ -1,7 +1,8 @@
 "use client";
-import React, { useState } from 'react';
+import React from 'react';
+import { motion } from 'framer-motion';
 import { AppProgressBar as ProgressBar } from "next-nprogress-bar";
-import  AccoladesCard  from '../components/accoladesCard';
+import AccoladesCard from '../components/accoladesCard';
 
 // Define the props interface
 interface AccoladesCardProps {
@@ -118,7 +119,7 @@ const Competition = () => {
       />
 
       <div className="container mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="items-center justify-center  sm:grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
           {accoladesData.map((item) => (
             <AccoladesCard
               key={item.id}
