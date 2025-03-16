@@ -1,11 +1,18 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { AppProgressBar as ProgressBar } from "next-nprogress-bar";
+import { motion } from "framer-motion";
 import projectsData from "~/app/data/projectdata";
 import Image from "next/image";
 
 export default function Page() {
+  const [showMore, setShowMore] = useState<number | null>(null);
+
+  const toggleShowMore = (id: number) => {
+    setShowMore((prev) => (prev === id ? null : id));
+  };
+
   return (
     <>
       <ProgressBar
@@ -15,93 +22,122 @@ export default function Page() {
         shallowRouting
       />
       <div className="bg-[#000000]">
-        <div className="mx-[5vw] mt-4 flex min-h-screen max-w-7xl flex-col items-center justify-center lg:mx-[10vw] xl:mx-auto">
+        <div className="mx-[5vw] flex min-h-screen max-w-7xl flex-col items-center justify-center lg:mx-[10vw] xl:mx-auto">
           {/* Heading and Subheading */}
           <div className="mb-4 h-24 w-full rounded-lg bg-transparent p-4 text-center text-white">
-            <h1 className="lg:text-6xl text-3xl font-bold text-ieeeyellow">Projects</h1>
+            <h1 className="lg:text-6xl text-3xl font-bold text-ieeeyellow">
+              Projects
+            </h1>
             <p className="lg:text-3xl text-xl text-ieeeyellow">
               Projects made by IEEE-CS
             </p>
           </div>
 
           {/* Project Cards */}
-          <div className="grid w-full grid-cols-1 gap-10 pb-8 pt-10 sm:grid-cols-2 md:grid-cols-3">
+          <div className="grid w-full grid-cols-1 gap-10 pb-8 pt-10 sm:grid-cols-2 md:grid-cols-2">
             {projectsData.map((event) => (
-              <div
+              <motion.div
                 key={event.id}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -50 }}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.05, boxShadow: "0px 4px 15px rgba(255, 163, 0, 0.5)" }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
                 className="overflow-hidden rounded-lg bg-black shadow-lg w-full"
               >
-                {/* Render only the section with content */}
-                <div className="sexy flex">
-                  {event.title_1 && (
-                    <div className="p-4 flex flex-col">
-                      {event.imageUrl_1 && (
-                        <Image
-                          src={event.imageUrl_1}
-                          alt={`${event.title_1} - Image 1`}
-                          width={500}
-                          height={300}
-                          className="w-full h-48 object-cover rounded-lg"
-                        />
-                      )}
-                      <h1 className="text-white text-xl font-semibold mb-2">
+                <div className="parent_div p-4 flex flex-col">
+
+                  {/* Card 1  */}
+                  {event.imageUrl_1 && (
+                    <div className="child_div p-4 flex flex-col">
+                      <Image
+                        src={event.imageUrl_1}
+                        alt={`${event.title_1} - Image`}
+                        width={500}
+                        height={300}
+                        className="w-full h-48 object-cover rounded-lg"
+                      />
+                      <h1 className="text-ieeeyellow text-xl font-semibold mt-4">
                         {event.title_1}
                       </h1>
-                      <p className="text-gray-300 text-sm mb-4">
-                        {event.description_1}
+                      <p className="text-gray-300 text-sm mt-2">
+                        {showMore === event.id
+                          ? event.description_1
+                          : `${event.description_1.substring(0, 100)}...`}
                       </p>
+                      {event.description_1.length > 100 && (
+                        <button
+                          className="text-ieeeyellow mt-2 text-sm underline cursor-pointer"
+                          onClick={() => toggleShowMore(event.id)}
+                        >
+                          {showMore === event.id ? "View Less" : "View More"}
+                        </button>
+                      )}
                     </div>
                   )}
-                  <div className="parent gid grid-rows-2">
-                    <div className="sub_parent row-span-1">
-                      {event.title_2 && (
-                        <div className="child p-4 flex flex-row">
-                          {event.imageUrl_2 && (
-                            <Image
-                              src={event.imageUrl_2}
-                              alt={`${event.title_2} - Image 2`}
-                              width={500}
-                              height={300}
-                              className="w-full h-48 object-cover rounded-lg"
-                            />
-                          )}
-                          <div className="sub_child flex flex-col">
-                            <h1 className="text-white text-xl font-semibold mb-2">
-                              {event.title_2}
-                            </h1>
-                            <p className="text-gray-300 text-sm mb-4">
-                              {event.description_2}
-                            </p>
-                          </div>
-                        </div>
+
+                  {/* Card 2  */}
+                  {event.imageUrl_2 && (
+                    <div className="child_div p-4 flex flex-row items-center">
+                      <Image
+                        src={event.imageUrl_2}
+                        alt={`${event.title_2} - Image`}
+                        width={200}
+                        height={200}
+                        className="w-1/2 h-48 object-cover rounded-lg"
+                      />
+                      <div className="ml-4">
+                        <h1 className="text-ieeeyellow text-xl font-semibold">
+                          {event.title_2}
+                        </h1>
+                        <p className="text-gray-300 text-sm">
+                          {showMore === event.id
+                            ? event.description_2
+                            : `${event.description_2.substring(0, 100)}...`}
+                        </p>
+                        {event.description_2.length > 100 && (
+                          <button
+                            className="text-ieeeyellow mt-2 text-sm underline cursor-pointer"
+                            onClick={() => toggleShowMore(event.id)}
+                          >
+                            {showMore === event.id ? "View Less" : "View More"}
+                          </button>
+                        )}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Card 3  */}
+                  {event.imageUrl_3 && (
+                    <div className="child_div p-4 flex flex-col">
+                      <Image
+                        src={event.imageUrl_3}
+                        alt={`${event.title_3} - Image`}
+                        width={500}
+                        height={300}
+                        className="w-full h-48 object-cover rounded-lg"
+                      />
+                      <h1 className="text-ieeeyellow text-xl font-semibold mt-4">
+                        {event.title_3}
+                      </h1>
+                      <p className="text-gray-300 text-sm mt-2">
+                        {showMore === event.id
+                          ? event.description_3
+                          : `${event.description_3.substring(0, 100)}...`}
+                      </p>
+                      {event.description_3.length > 100 && (
+                        <button
+                          className="text-ieeeyellow mt-2 text-sm underline cursor-pointer"
+                          onClick={() => toggleShowMore(event.id)}
+                        >
+                          {showMore === event.id ? "View Less" : "View More"}
+                        </button>
                       )}
                     </div>
-                    <div className="sub_parent row-span-1">
-                      {event.title_3 && (
-                        <div className="child p-4 flex flex-row">
-                          {event.imageUrl_3 && (
-                            <Image
-                              src={event.imageUrl_3}
-                              alt={`${event.title_3} - Image 3`}
-                              width={500}
-                              height={300}
-                              className="w-full h-48 object-cover rounded-lg"
-                            />
-                          )}
-                          <div className="sub_child flex flex-col">
-                            <h1 className="text-white text-xl font-semibold mb-2">
-                              {event.title_3}
-                            </h1>
-                            <p className="text-gray-300 text-sm mb-4">
-                              {event.description_3}
-                            </p>
-                          </div>
-                        </div>
-                      )}
-                    </div>  
-                  </div>
+                  )}
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
