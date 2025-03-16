@@ -40,7 +40,7 @@ const AccoladesCard: React.FC<AccoladesCardProps> = ({
           className="w-full h-full object-cover rounded-xl"
         />
 
-        {/* Bottom Content Section */}
+       
         {!expanded && (
           <div className="absolute bottom-0 w-full bg-gradient-to-t from-black/80 via-black/60 to-transparent p-4 rounded-xl z-10">
             <h3 className="text-ieeeorange font-bold text-xl">{hackathonName}</h3>
@@ -55,7 +55,7 @@ const AccoladesCard: React.FC<AccoladesCardProps> = ({
           </div>
         )}
 
-        {/* Expanded Details (Center View) */}
+       
         <div 
           className={`absolute inset-0 bg-black/90 p-6 flex flex-col justify-center items-center rounded-xl z-20 transition-all duration-500 ease-in-out ${
             expanded 
