@@ -10,8 +10,6 @@ interface AccoladesCardProps {
   photos: string;
   position: string;
   fullWidth: boolean;
-  iconApp?: boolean;
-  buttonText?: string;
   subtext?: string;
   id?: number;
 }
