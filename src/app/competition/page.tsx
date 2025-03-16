@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { AppProgressBar as ProgressBar } from "next-nprogress-bar";
 import AccoladesCard from '../components/accoladesCard';
 
-// Define the props interface
+
 interface AccoladesCardProps {
   hackathonName: string;
   description: string;
