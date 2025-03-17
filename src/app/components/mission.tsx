@@ -14,8 +14,8 @@ import image3 from "../../../public/galleryIEEE/image3.jpeg";
 import image4 from "../../../public/galleryIEEE/image4.jpg";
 import image5 from "../../../public/galleryIEEE/image5.jpeg";
 import image7 from "../../../public/galleryIEEE/image7.jpeg";
-import image8 from "../../../public/galleryIEEE/image8.JPG";
-import image9 from "../../../public/galleryIEEE/image9.JPG";
+import image8 from "../../../public/galleryIEEE/image8.jpg";
+import image9 from "../../../public/galleryIEEE/image9.jpg";
 import image10 from "../../../public/galleryIEEE/image10.jpeg";
 
 const Mission = () => {
