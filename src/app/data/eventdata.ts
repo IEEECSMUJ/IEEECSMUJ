@@ -173,7 +173,7 @@ const eventsData: Event[] = [
     title: "Git it Done",
     description: "A hands-on workshop and unlock the full power of GitHub- from mastering version control to nailing that GSoC 🎖",
     imageUrl: "https://images.prismic.io/ieeemuj/Z0iy5JbqstJ974Kh_GITITDONEPOSTER.png?auto=format,compress",
-    completed: false,
+    completed: true,
     registerUrl: "https://forms.gle/3ZgBNR3cWEfmgVsa9"
   }
 
