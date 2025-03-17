@@ -24,7 +24,7 @@ export default function Page() {
       <div className="bg-[#000000]">
         <div className="mx-[5vw] flex min-h-screen max-w-7xl flex-col items-center justify-center lg:mx-[10vw] xl:mx-auto">
           {/* Heading and Subheading */}
-          <div className="mb-4 h-24 w-full rounded-lg bg-transparent p-4 text-center text-white">
+          <div className="mb-4 h-24 w-full rounded-xl bg-transparent p-4 text-center text-white">
             <h1 className="lg:text-6xl text-3xl font-bold text-ieeeyellow">
               Projects
             </h1>
@@ -44,7 +44,7 @@ export default function Page() {
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.05, boxShadow: "0px 4px 15px rgba(255, 163, 0, 0.5)" }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
-                className="overflow-hidden rounded-lg bg-black shadow-lg w-full"
+                className="overflow-hidden rounded-xl bg-black shadow-lg w-full"
               >
                 <div className="parent_div p-4 flex flex-col">
 
@@ -56,7 +56,7 @@ export default function Page() {
                         alt={`${event.title_1} - Image`}
                         width={500}
                         height={300}
-                        className="w-full h-48 object-cover rounded-lg"
+                        className="w-full h-48 object-cover rounded-tl-2xl rounded-tr-2xl"
                       />
                       <h1 className="text-ieeeyellow text-xl font-semibold mt-4">
                         {event.title_1}
@@ -68,7 +68,7 @@ export default function Page() {
                       </p>
                       {event.description_1.length > 100 && (
                         <button
-                          className="text-ieeeyellow mt-2 text-sm underline cursor-pointer"
+                          className="text-ieeeyellow mt-2 text-sm underline cursor-pointer self-end"
                           onClick={() => toggleShowMore(event.id)}
                         >
                           {showMore === event.id ? "View Less" : "View More"}
@@ -85,7 +85,7 @@ export default function Page() {
                         alt={`${event.title_2} - Image`}
                         width={200}
                         height={200}
-                        className="w-1/2 h-48 object-cover rounded-lg"
+                        className="w-1/3 h-48 object-cover rounded-tl-2xl rounded-bl-2xl"
                       />
                       <div className="ml-4">
                         <h1 className="text-ieeeyellow text-xl font-semibold">
@@ -96,14 +96,17 @@ export default function Page() {
                             ? event.description_2
                             : `${event.description_2.substring(0, 100)}...`}
                         </p>
-                        {event.description_2.length > 100 && (
-                          <button
-                            className="text-ieeeyellow mt-2 text-sm underline cursor-pointer"
-                            onClick={() => toggleShowMore(event.id)}
-                          >
-                            {showMore === event.id ? "View Less" : "View More"}
-                          </button>
-                        )}
+                        <div className="flex  flex-row">
+                          <div className="flex-auto"></div>
+                          {event.description_2.length > 100 && (
+                            <button
+                              className="text-ieeeyellow mt-2 text-sm underline cursor-pointer justify-between"
+                              onClick={() => toggleShowMore(event.id)}
+                            >
+                              {showMore === event.id ? "View Less" : "View More"}
+                            </button>
+                          )}
+                        </div>
                       </div>
                     </div>
                   )}
@@ -116,7 +119,7 @@ export default function Page() {
                         alt={`${event.title_3} - Image`}
                         width={500}
                         height={300}
-                        className="w-full h-48 object-cover rounded-lg"
+                        className="w-full h-48 object-cover rounded-tl-2xl rounded-tr-2xl"
                       />
                       <h1 className="text-ieeeyellow text-xl font-semibold mt-4">
                         {event.title_3}
@@ -128,7 +131,7 @@ export default function Page() {
                       </p>
                       {event.description_3.length > 100 && (
                         <button
-                          className="text-ieeeyellow mt-2 text-sm underline cursor-pointer"
+                          className="text-ieeeyellow mt-2 text-sm underline cursor-pointer self-end"
                           onClick={() => toggleShowMore(event.id)}
                         >
                           {showMore === event.id ? "View Less" : "View More"}
