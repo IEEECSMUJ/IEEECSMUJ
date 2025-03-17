@@ -24,12 +24,12 @@ export default function Page() {
       <div className="bg-[#000000]">
         <div className="mx-[5vw] flex min-h-screen max-w-7xl flex-col items-center justify-center lg:mx-[10vw] xl:mx-auto">
           {/* Heading and Subheading */}
-          <div className="mb-4 h-24 w-full rounded-xl bg-transparent p-4 text-center text-white">
+          <div className="mb-12 h-24 w-full rounded-xl bg-transparent p-4 text-center text-white">
             <h1 className="lg:text-6xl text-3xl font-bold text-ieeeyellow">
               Projects
             </h1>
-            <p className="lg:text-3xl text-xl text-ieeeyellow">
-              Projects made by IEEE-CS
+            <p className="lg:text-3xl text-xl text-ieeeyellow mt-6">
+              Unveiling Creativity in Computing
             </p>
           </div>
 
