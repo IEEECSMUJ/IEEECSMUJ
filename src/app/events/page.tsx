@@ -89,9 +89,7 @@ export default function Page() {
                 </div>
               ) : (
                 <Link href={
-                  // ⚠️ REMOVE BEFORE FLIGHT!!! ⚠️
-                  // TODO: `/events/${event.id}`
-                  "/wip/"
+                  `/events/${event.id}`
                   }>
                   <div className="mt-4 block rounded-full bg-[#FFA300] px-4 py-2 font-semibold text-white transition duration-300 hover:bg-yellow-700">
                     Know More
