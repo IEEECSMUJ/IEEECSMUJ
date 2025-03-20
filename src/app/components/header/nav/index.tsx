@@ -28,10 +28,6 @@ const navItems = [
         title: "Team",
         href: "/team",
     },
-    {
-        title: "Accolades",
-        href: "/competition",
-    },
 
 ]
 
@@ -43,7 +39,7 @@ export default function index() {
     const [selectedIndicator, setSelectedIndicator] = useState(pathname);
 
     return (
-        <div className='lg:w-[25%] w-screen'>
+        <div className='lg:w-[20%] w-screen'>
             <motion.div variants={menuSlide} initial="initial" animate="enter" exit="exit" className={styles.menu}>
                 <div className={styles.body}>
                     <div onMouseLeave={() => {setSelectedIndicator(pathname)}} className={styles.nav}>

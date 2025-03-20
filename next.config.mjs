@@ -7,13 +7,11 @@ await import("./src/env.mjs");
 /** @type {import("next").NextConfig} */
 const config = {
     images: {
-        domains: ["plus.unsplash.com", "images.unsplash.com"],
         remotePatterns: [
             {
                 protocol: 'https',
                 hostname: 'images.prismic.io',
-            },
-            {
+            },{
                 protocol: 'https',
                 hostname: 'www.shutterstock.com',
             },
