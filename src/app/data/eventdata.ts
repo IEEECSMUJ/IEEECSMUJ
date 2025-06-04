@@ -218,7 +218,57 @@ const eventsData: Event[] = [
     completed: true,
     venue: "AB1",
     dateAndTime: "Unknown|Unknown",
-    registerUrl: "https://forms.gle/3ZgBNR3cWEfmgVsa9"
-  }
+    registerUrl: ""
+  },
+  {
+    id: 22,
+    title: "FTF 8.0",
+    description: "MUJ alumnus Vaibhav Barodawala from Nvidia articulated valuable insights on mastering core CS fundamentals and strategic utilization of modern tech stacks.",
+    imageUrl: "https://images.prismic.io/ieeemuj/aEBlO7h8WN-LVmfc_FTF-GREEN%5B1%5D.png?auto=format,compress",
+    completed: true,
+    venue: "online",
+    dateAndTime: "Unknown|Unknown",
+    registerUrl: ""
+  },
+  {
+    id: 23,
+    title: "Snatch",
+    description: "Snatch was a high intensity coding gauntlet where teams battled in a problem-solving crusade of wits and synergy",
+    imageUrl: "https://images.prismic.io/ieeemuj/aEBlzbh8WN-LVmhm_CTFsnatch%5B1%5D.png?auto=format,compress",
+    completed: true,
+    venue: "AB1",
+    dateAndTime: "Unknown|Unknown",
+    registerUrl: ""
+  },
+  {
+    id: 24,
+    title: "T-Minus",
+    description: "T-Minus was a ticking warzone of tech, wit, nerve, and focus where teams raced against time to crack codes, dodge lasers,and conquer high-tech challenges.",
+    imageUrl: "https://images.prismic.io/ieeemuj/aEBl9rh8WN-LVmh8_T-MINUS%5B1%5D.png?auto=format,compress",
+    completed: true,
+    venue: "AB1",
+    dateAndTime: "Unknown|Unknown",
+    registerUrl: ""
+  },
+  {
+    id: 25,
+    title: "Mockup 4.0",
+    description: "Mockup 4.0 was a 24-hour designathon where aspiring designers and startup enthusiasts transformed raw ideas into innovative digital experiences",
+    imageUrl: "https://images.prismic.io/ieeemuj/aEBmILh8WN-LVmia_MOCKUP%5B1%5D.png?auto=format,compress",
+    completed: true,
+    venue: "online",
+    dateAndTime: "Unknown|Unknown",
+    registerUrl: ""
+  },
+  {
+    id: 26,
+    title: "HackerzStreet",
+    description: "Hackerzstreet 3.0 is a 24-hour high octane hackathon where caffeine meets code, chaos sparks creativity and only the sharpest minds survive",
+    imageUrl: "https://images.prismic.io/ieeemuj/aEBmR7h8WN-LVmiy_HSPoster%5B1%5D.png?auto=format,compress",
+    completed: true,
+    venue: "AB1",
+    dateAndTime: "Unknown|Unknown",
+    registerUrl: ""
+  },
 ];
 export default eventsData;
