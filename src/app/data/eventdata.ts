@@ -262,7 +262,7 @@ const eventsData: Event[] = [
   },
   {
     id: 26,
-    title: "HackerzStreet",
+    title: "HackerzStreet 3.0",
     description: "Hackerzstreet 3.0 is a 24-hour high octane hackathon where caffeine meets code, chaos sparks creativity and only the sharpest minds survive",
     imageUrl: "https://images.prismic.io/ieeemuj/aEBmR7h8WN-LVmiy_HSPoster%5B1%5D.png?auto=format,compress",
     completed: true,

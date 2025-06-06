@@ -78,7 +78,7 @@ const CCTeamData = [
   },
   {
     name: "Sanidhya Jaiswal",
-    imageURL: "https://images.prismic.io/ieeemuj/aD3BH7h8WN-LVfSj_WhatsAppImage2025-05-29at16.03.24_d2f620eb-SiddhantJaiswal.jpg?auto=format,compress",
+    imageURL: "https://images.prismic.io/ieeemuj/aEM3hbh8WN-LVxrj_WhatsAppImage2025-06-05at14.39.33_3699181e.jpg?auto=format,compress",
     position: "Senior Coordinator of Programs",
     hasLinkedIn: true,
     linkedInURL: "https://www.linkedin.com/in/sanidhya-jaiswal-033378325/",
@@ -179,7 +179,7 @@ const CCTeamData = [
   },
   {
     name: "Kushagra Kaushik",
-    imageURL: "https://images.prismic.io/ieeemuj/aD3ETLh8WN-LVfU8_Kushagra-UpperMoon1.jpg?auto=format,compress",
+    imageURL: "https://images.prismic.io/ieeemuj/aEM2dLh8WN-LVxqH_WhatsAppImage2025-06-05at01.47.53_da5b4988.jpg?auto=format,compress",
     position: "Senior Coordinator of Technical Projects",
     hasLinkedIn: true,
     linkedInURL: "www.linkedin.com/in/kushagrakaushik19",
@@ -234,14 +234,14 @@ const CCTeamData = [
   },
   {
     name: "Arindam Sharmaa",
-    imageURL: "https://images.prismic.io/ieeemuj/aD3QBrh8WN-LVfeL_ArindamIEEE-ArindamSharma.JPG?auto=format,compress",
+    imageURL: "https://images.prismic.io/ieeemuj/aEM4ILh8WN-LVxsP_IEEE3%5B1%5D.JPG?auto=format,compress",
     position: "Joint Head of Graphic Design",
     hasLinkedIn: true,
-    linkedInURL: "www.linkedin.com/in/arindam~sharma~5906",
+    linkedInURL: "https://www.linkedin.com/in/arindam~sharma~5906",
     hasGitHub: false,
     gitHubURL: "",
     hasInstagram: true,
-    instagramURL: "https://instagram.com/https://www.instagram.com/arindamsharma05/",
+    instagramURL: "https://instagram.com//arindamsharma05/",
   },
   {
     name: "Kartik Garg",
@@ -509,7 +509,7 @@ const CCTeamData = [
   },
   {
     name: "Aditya Chauhan",
-    imageURL: "https://images.prismic.io/ieeemuj/aD_vAbh8WN-LVkZE_IMG_2265-AdityaChauhan.png?auto=format,compress",
+    imageURL: "https://images.prismic.io/ieeemuj/aEM2xLh8WN-LVxqf_WhatsAppImage2025-06-06at14.29.29_170f729b.jpg?auto=format,compress",
     position: "Senior Coordinator of Curations",
     hasLinkedIn: true,
     linkedInURL: "https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav",
@@ -718,7 +718,7 @@ const CCTeamData = [
   },
   {
     name: "Anshuman Singh",
-    imageURL: "https://images.prismic.io/ieeemuj/aD_zQbh8WN-LVkbC_20250528_195413-AnshumanSingh.jpg?auto=format,compress",
+    imageURL: "https://images.prismic.io/ieeemuj/aEM3B7h8WN-LVxqu_20250405_211338-AnshumanSingh.jpg?auto=format,compress",
     position: "Senior Coordinator of Community",
     hasLinkedIn: true,
     linkedInURL: "https://www.linkedin.com/in/anshuman-singh-766088368/",
