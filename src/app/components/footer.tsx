@@ -65,12 +65,14 @@ export default function Footer() {
                            <p className="text-xl font-semibold pb-2">Contact Us</p>
                            <div className="text-base flex flex-col gap-3">
                                <ul>
-                                   <li><Link href="tel:+919721490618">+91 95699 13103</Link></li>
-                                   <li>Rishi Joshi</li>
+                                   <li><Link href="tel:+919721490618">+91 98713 40076</Link></li>
+                                   <li>Samaksh Gupta</li>
+                                   <li>Chairperson</li>
                                </ul>
                                <ul>
-                                   <li><Link href="tel:+919569516125">+91 99995 58266</Link></li>
-                                   <li>Pranav Bhardwaj</li>
+                                   <li><Link href="tel:+919569516125">+91 88605 14740</Link></li>
+                                   <li>Tamanna Yadav</li>
+                                   <li>Vice Chairperson</li>
                                </ul>
                            </div>
                        </div>
