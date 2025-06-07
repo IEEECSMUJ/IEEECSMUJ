@@ -22,7 +22,7 @@ const ECTeamData = [
     instagramURL: "https://www.instagram.com/tamanna.yadav_?igsh=MWl3Ym16bDMyOHBtZg==",
   }, {
     name: "Salaj Singh Bisht",
-    imageURL: "https://images.prismic.io/ieeemuj/ZnHLL5m069VX12yn_IMG_20240416_161408-SalajBisht.jpg?auto=format,compress",
+    imageURL: "https://images.prismic.io/ieeemuj/aESNg7h8WN-LV26I_SalajBishtJan122025.jpg?auto=format,compress",
     position: "General Secretary",
     hasLinkedIn: true,
     linkedInURL: "https://www.linkedin.com/in/salaj-singh-bisht-837899248",
