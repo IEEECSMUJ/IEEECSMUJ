@@ -270,5 +270,15 @@ const eventsData: Event[] = [
     dateAndTime: "Unknown|Unknown",
     registerUrl: ""
   },
+  {
+    id: 27,
+    title: "Burnout",
+    description: "Burnout is a fast paced MotoGP-themed datathon where every second counts,each dataset was a curve and only the sharpest minds make it to the finish line",
+    imageUrl: "https://images.prismic.io/ieeemuj/aExUQ7NJEFaPX9Bv_burnout.jpg?auto=format,compress",
+    completed: true,
+    venue: "online",
+    dateAndTime: "June 14, 2025|10:00hr - 22:00hr",
+    registerUrl: "https://unstop.com/hackathons/burnout-motogp-datathon-manipal-university-mu-jaipur-1499433"
+  },
 ];
 export default eventsData;
