@@ -275,7 +275,7 @@ const eventsData: Event[] = [
     title: "Burnout",
     description: "Burnout is a fast paced MotoGP-themed datathon where every second counts,each dataset was a curve and only the sharpest minds make it to the finish line",
     imageUrl: "https://images.prismic.io/ieeemuj/aExUQ7NJEFaPX9Bv_burnout.jpg?auto=format,compress",
-    completed: false,
+    completed: true,
     venue: "online",
     dateAndTime: "Unknown|Unknown",
     registerUrl: ""
