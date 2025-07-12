@@ -277,8 +277,8 @@ const eventsData: Event[] = [
     imageUrl: "https://images.prismic.io/ieeemuj/aExUQ7NJEFaPX9Bv_burnout.jpg?auto=format,compress",
     completed: true,
     venue: "online",
-    dateAndTime: "Unknown|Unknown",
-    registerUrl: ""
+    dateAndTime: "June 14, 2025|10:00hr - 22:00hr",
+    registerUrl: "https://unstop.com/hackathons/burnout-motogp-datathon-manipal-university-mu-jaipur-1499433"
   },
 ];
 export default eventsData;
