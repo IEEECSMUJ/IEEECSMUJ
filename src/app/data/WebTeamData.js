@@ -56,7 +56,7 @@ const WebTeamData = [
     },
     {
         name: "Samaksh Gupta",
-        imageURL: "https://images.prismic.io/ieeemuj/ZnHHCpm069VX12xb_IMG-20240405-WA0024~2-SamakshGupta.jpg?auto=format,compress",
+        imageURL: "https://images.prismic.io/ieeemuj/aHKU2kMqNJQqH0Ug_IMG_0315.HEIC?auto=format,compress",
         position: "Web Developer",
         hasLinkedIn: true,
         linkedInURL: "https://www.linkedin.com/in/samakshgupta04",
