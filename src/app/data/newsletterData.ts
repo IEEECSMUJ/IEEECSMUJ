@@ -10,11 +10,11 @@ const newsletterData: Newsletter[] = [
     year: 2025,
     url: "https://drive.google.com/file/d/1svxuAckkjO_7ZuMVEP-H3HKZH89mP4vL/view",
   },
-//   {
-//     month: "july",
-//     year: 2025,
-//     url: "",
-//   },
+  {
+    month: "july",
+    year: 2025,
+    url: "https://drive.google.com/file/d/1hHYQlHDODPI-j7xNQ5gr65TKfR3NQRzX/view",
+  },
 //   {
 //     month: "august",
 //     year: 2025,
