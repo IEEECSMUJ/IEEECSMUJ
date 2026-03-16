@@ -3,9 +3,6 @@
 import Image from "next/image";
 import logo from "../assets/ieee-logo-white.svg";
 import React from "react";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faLinkedin, faSquareInstagram, faSquareWhatsapp, faSquareGithub} from "@fortawesome/free-brands-svg-icons";
-import Link from "next/link";
 
 
 export default function Footer() {
@@ -24,40 +21,40 @@ export default function Footer() {
                            <p className="text-xl font-semibold pb-2">Socials</p>
                            <ul className=" content-evenly text-base font-medium">
                                <li>
-                                   <Link href="https://www.linkedin.com/company/ieee-cs-muj/" className="inline-flex"><FontAwesomeIcon icon={faLinkedin} size="xl"/><p className="hover:underline hover:underline-offset-2 pl-1">@ieeecsmuj</p>
+                                   <a href="https://www.linkedin.com/company/ieee-cs-muj/" className="inline-flex" target="_blank" rel="noopener noreferrer"><p className="hover:underline hover:underline-offset-2 pl-1">LinkedIn / @ieeecsmuj</p>
                                        <span>
                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
                                            <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" />
                                        </svg>
                                    </span>
-                                   </Link>
+                                   </a>
                                </li>
                                <li>
-                                   <Link href="https://instagram.com/ieee_csmuj?igshid=OGQ5ZDc2ODk2ZA==" className="inline-flex"><FontAwesomeIcon icon={faSquareInstagram} size="xl"/><p className="hover:underline hover:underline-offset-2 pl-1">@ieee_csmuj</p>
+                                   <a href="https://instagram.com/ieee_csmuj?igshid=OGQ5ZDc2ODk2ZA==" className="inline-flex" target="_blank" rel="noopener noreferrer"><p className="hover:underline hover:underline-offset-2 pl-1">Instagram / @ieee_csmuj</p>
                                        <span>
                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
                                            <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" />
                                        </svg>
                                    </span>
-                                   </Link>
+                                   </a>
                                </li>
                                <li>
-                                   <Link href="https://chat.whatsapp.com/GHqC5oT8x0w6ogNy94fhuI" className="inline-flex"><FontAwesomeIcon icon={faSquareWhatsapp} size="xl"/><p className="hover:underline hover:underline-offset-2 pl-1">@ieeecsmuj</p>
+                                   <a href="https://chat.whatsapp.com/GHqC5oT8x0w6ogNy94fhuI" className="inline-flex" target="_blank" rel="noopener noreferrer"><p className="hover:underline hover:underline-offset-2 pl-1">WhatsApp / @ieeecsmuj</p>
                                        <span>
                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
                                            <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" />
                                        </svg>
                                    </span>
-                                   </Link>
+                                   </a>
                                </li>
                                <li>
-                                   <Link href="https://github.com/IEEECSMUJ/IEEECSMUJ" className="inline-flex"><FontAwesomeIcon icon={faSquareGithub} size="xl"/><p className="hover:underline hover:underline-offset-2 pl-1">@IEEECSMUJ</p>
+                                   <a href="https://github.com/IEEECSMUJ/IEEECSMUJ" className="inline-flex" target="_blank" rel="noopener noreferrer"><p className="hover:underline hover:underline-offset-2 pl-1">GitHub / @IEEECSMUJ</p>
                                        <span>
                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
                                            <path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd" />
                                        </svg>
                                    </span>
-                                   </Link>
+                                   </a>
                                </li>
                            </ul>
                        </div>
@@ -65,12 +62,12 @@ export default function Footer() {
                            <p className="text-xl font-semibold pb-2">Contact Us</p>
                            <div className="text-base flex flex-col gap-3">
                                <ul>
-                                   <li><Link href="tel:+919721490618">+91 98713 40076</Link></li>
+                                   <li><a href="tel:+919721490618">+91 98713 40076</a></li>
                                    <li>Samaksh Gupta</li>
                                    <li>Chairperson</li>
                                </ul>
                                <ul>
-                                   <li><Link href="tel:+919569516125">+91 88605 14740</Link></li>
+                                   <li><a href="tel:+919569516125">+91 88605 14740</a></li>
                                    <li>Tamanna Yadav</li>
                                    <li>Vice Chairperson</li>
                                </ul>
@@ -79,11 +76,11 @@ export default function Footer() {
                        <div className="">
                            <p className="text-xl font-semibold pb-2">Links</p>
                            <ul className="text-base flex flex-col gap-1 ">
-                               <li className="leading-6 hover:underline hover:underline-offset-2 pl-1"><Link href="https://jaipur.manipal.edu/">MUJ Official Website</Link></li>
-                               <li className="leading-6 hover:underline hover:underline-offset-2 pl-1"><Link href="https://www.ieee.org/">IEEE Official Website</Link></li>
-                               <li className="leading-6 hover:underline hover:underline-offset-2 pl-1"><Link href="https://www.computer.org/">IEEE Computer Society</Link></li>
-                               <li className="leading-6 hover:underline hover:underline-offset-2 pl-1"><Link href="https://ieeemuj.com/">IEEE MUJ Website</Link></li>
-                               <li className="leading-6 hover:underline hover:underline-offset-2 pl-1"><Link href="https://www.ieee.org/membership_services/membership/join/index.html">IEEE Global Membership</Link></li>
+                               <li className="leading-6 hover:underline hover:underline-offset-2 pl-1"><a href="https://jaipur.manipal.edu/" target="_blank" rel="noopener noreferrer">MUJ Official Website</a></li>
+                               <li className="leading-6 hover:underline hover:underline-offset-2 pl-1"><a href="https://www.ieee.org/" target="_blank" rel="noopener noreferrer">IEEE Official Website</a></li>
+                               <li className="leading-6 hover:underline hover:underline-offset-2 pl-1"><a href="https://www.computer.org/" target="_blank" rel="noopener noreferrer">IEEE Computer Society</a></li>
+                               <li className="leading-6 hover:underline hover:underline-offset-2 pl-1"><a href="https://ieeemuj.com/" target="_blank" rel="noopener noreferrer">IEEE MUJ Website</a></li>
+                               <li className="leading-6 hover:underline hover:underline-offset-2 pl-1"><a href="https://www.ieee.org/membership_services/membership/join/index.html" target="_blank" rel="noopener noreferrer">IEEE Global Membership</a></li>
                            </ul>
                        </div>
                        <div className="md:w-[20%] mb-4">
