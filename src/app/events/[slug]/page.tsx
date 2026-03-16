@@ -1,14 +1,21 @@
-"use client";
-import React from "react";
-import { usePathname, notFound } from "next/navigation";
+import { notFound } from "next/navigation";
 import eventsData from "../../data/eventdata";
 
+export const dynamicParams = true;
 
-const Details = () => {
-  const slug = parseInt(decodeURIComponent(
-    usePathname().replace("/events/", "")
-  ).toLowerCase());
-  const event = eventsData.find((x) => x.id === slug);
+export function generateStaticParams() {
+  return eventsData.map((event) => ({ slug: event.id.toString() }));
+}
+
+interface DetailsProps {
+  params: { slug?: string };
+}
+
+const Details = ({ params }: DetailsProps) => {
+  const { slug } = params;
+  const parsedSlug = Number.parseInt(slug ?? "", 10);
+  const event = eventsData.find((x) => x.id === parsedSlug);
+
   if (!event) return notFound();
 
   return (
@@ -44,11 +51,11 @@ const Details = () => {
   );
 };
 
-const Title = ({ text }: {text: string | undefined}) => {
+const Title = ({ text }: { text: string | undefined }) => {
   return <div className="font-[600] underline">{text}:</div>;
 };
 
-const Content = ({ text }: {text: string | undefined}) => {
+const Content = ({ text }: { text: string | undefined }) => {
   return <div>{text}</div>;
 };
 
