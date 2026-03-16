@@ -4,6 +4,12 @@ interface RedirectProps {
   params: Promise<{ slug?: string }>;
 }
 
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return [{ slug: "hs" }, { slug: "mockup" }];
+}
+
 const registrationLinks: Record<string, string> = {
   hs: "https://unstop.com/p/hackerzstreet-40-manipal-university-mu-jaipur-1657990",
   mockup:
