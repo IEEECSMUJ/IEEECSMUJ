@@ -16,7 +16,22 @@ const config = {
                 hostname: 'www.shutterstock.com',
             },
         ],
-    }
+    },
+    async redirects() {
+        return [
+            {
+                source: '/reg/hs',
+                destination: 'https://unstop.com/p/hackerzstreet-40-manipal-university-mu-jaipur-1657990',
+                permanent: false,
+            },
+            {
+                source: '/reg/mockup',
+                destination:
+                    'https://unstop.com/o/5JHBCOz?lb=jRTzLubh&utm_medium=Share&utm_source=sarapan47121&utm_campaign=Online_coding_challenge',
+                permanent: false,
+            },
+        ];
+    },
 };
 
 export default config;
