@@ -40,12 +40,14 @@ export const metadata: Metadata = {
         type: 'website',
     },
 };
-export default function RootLayout({
+export default async function RootLayout({
 
                                        children,
                                    }: {
     children: React.ReactNode;
 }) {
+
+    const requestHeaders = Object.fromEntries((await headers()).entries());
 
     return (
         <html lang="en">
@@ -69,7 +71,7 @@ export default function RootLayout({
         <body className={`font-sans bg-black ${poppins.variable}`}>
         <Navbar/>
         <div className='bg-black overflow-hidden text-white'>
-            <TRPCReactProvider headers={headers()}>{children}</TRPCReactProvider>
+            <TRPCReactProvider headers={requestHeaders}>{children}</TRPCReactProvider>
             <Footer/>
         </div>
         </body>
