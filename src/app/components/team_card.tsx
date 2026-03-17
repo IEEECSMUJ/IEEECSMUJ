@@ -27,7 +27,7 @@ export function ECTeamCard() {
                     {data.hasLinkedIn &&
                       <li>
                         <Link href={data.linkedInURL} className="inline-flex gap-2">
-                          <FontAwesomeIcon icon={faLinkedin} size="xl"/>
+                          {/*<FontAwesomeIcon icon={faLinkedin} size="xl"/>*/}
                           <p className="inline-flex hover:underline hover:underline-offset-2">Linkedin<span>
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                  fill="currentColor" className="w-4 h-4"><path fillRule="evenodd"
@@ -40,7 +40,7 @@ export function ECTeamCard() {
                     }
                     {data.hasGitHub && <li>
                       <Link href={data.gitHubURL} className="inline-flex gap-2">
-                        <FontAwesomeIcon icon={faSquareGithub} size="xl"/>
+                        {/*<FontAwesomeIcon icon={faSquareGithub} size="xl"/>*/}
                         <p className="inline-flex hover:underline hover:underline-offset-2">GitHub<span>
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                  fill="currentColor" className="w-4 h-4"><path fillRule="evenodd"
@@ -52,7 +52,7 @@ export function ECTeamCard() {
                     </li>}
                     {data.hasInstagram && <li>
                       <Link href={data.instagramURL} className="inline-flex gap-2">
-                        <FontAwesomeIcon icon={faSquareInstagram} size="xl"/>
+                        {/*<FontAwesomeIcon icon={faSquareInstagram} size="xl"/>*/}
                         <p className="inline-flex hover:underline hover:underline-offset-2">Instagram<span>
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                  fill="currentColor" className="w-4 h-4"><path fillRule="evenodd"
@@ -94,7 +94,7 @@ export function WebTeamCard() {
                     {data.hasLinkedIn &&
                       <li>
                         <Link href={data.linkedInURL} className="inline-flex gap-2">
-                          <FontAwesomeIcon icon={faLinkedin} size="xl"/>
+                          {/*<FontAwesomeIcon icon={faLinkedin} size="xl"/>*/}
                           <p className="inline-flex hover:underline hover:underline-offset-2">Linkedin<span>
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                  fill="currentColor" className="w-4 h-4"><path fillRule="evenodd"
@@ -107,7 +107,7 @@ export function WebTeamCard() {
                     }
                     {data.hasGitHub && <li>
                       <Link href={data.gitHubURL} className="inline-flex gap-2">
-                        <FontAwesomeIcon icon={faSquareGithub} size="xl"/>
+                        {/*<FontAwesomeIcon icon={faSquareGithub} size="xl"/>*/}
                         <p className="inline-flex hover:underline hover:underline-offset-2">GitHub<span>
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                  fill="currentColor" className="w-4 h-4"><path fillRule="evenodd"
@@ -119,7 +119,7 @@ export function WebTeamCard() {
                     </li>}
                     {data.hasInstagram && <li>
                       <Link href={data.instagramURL} className="inline-flex gap-2">
-                        <FontAwesomeIcon icon={faSquareInstagram} size="xl"/>
+                        {/*<FontAwesomeIcon icon={faSquareInstagram} size="xl"/>*/}
                         <p className="inline-flex hover:underline hover:underline-offset-2">Instagram<span>
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                  fill="currentColor" className="w-4 h-4"><path fillRule="evenodd"
@@ -161,7 +161,7 @@ export function CCTeamCard() {
                     {data.hasLinkedIn &&
                       <li>
                         <Link href={data.linkedInURL} className="inline-flex gap-2">
-                          <FontAwesomeIcon icon={faLinkedin} size="xl"/>
+                          {/*<FontAwesomeIcon icon={faLinkedin} size="xl"/>*/}
                           <p className="inline-flex hover:underline hover:underline-offset-2">Linkedin<span>
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                  fill="currentColor" className="w-4 h-4"><path fillRule="evenodd"
@@ -174,7 +174,7 @@ export function CCTeamCard() {
                     }
                     {data.hasGitHub && <li>
                       <Link href={data.gitHubURL} className="inline-flex gap-2">
-                        <FontAwesomeIcon icon={faSquareGithub} size="xl"/>
+                        {/*<FontAwesomeIcon icon={faSquareGithub} size="xl"/>*/}
                         <p className="inline-flex hover:underline hover:underline-offset-2">GitHub<span>
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                  fill="currentColor" className="w-4 h-4"><path fillRule="evenodd"
@@ -186,7 +186,7 @@ export function CCTeamCard() {
                     </li>}
                     {data.hasInstagram && <li>
                       <Link href={data.instagramURL} className="inline-flex gap-2">
-                        <FontAwesomeIcon icon={faSquareInstagram} size="xl"/>
+                        {/*<FontAwesomeIcon icon={faSquareInstagram} size="xl"/>*/}
                         <p className="inline-flex hover:underline hover:underline-offset-2">Instagram<span>
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                  fill="currentColor" className="w-4 h-4"><path fillRule="evenodd"
