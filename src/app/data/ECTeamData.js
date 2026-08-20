@@ -1,7 +1,7 @@
 const ECTeamData = [
   {
     name: "Samaksh Gupta",
-    imageURL: "https://images.prismic.io/ieeemuj/ZnJjw5m069VX13S1_IMG-20240405-WA0024~2-SamakshGupta.jpg?auto=format,compress",
+    imageURL: "https://images.prismic.io/ieeemuj/aHKU2kMqNJQqH0Ug_IMG_0315.HEIC?auto=format,compress",
     position: "Chairperson",
     hasLinkedIn: true,
     linkedInURL: "https://www.linkedin.com/in/samakshgupta04",
